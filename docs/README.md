@@ -15,6 +15,7 @@ New here? Follow [Setup](setup.md), then [Using the studio](guide.md).
 | [Release status](status.md) | Understand supported platforms and known limitations. |
 | [Roadmap](roadmap.md) | See planned work or suggest a concrete use case. |
 | [Contributing](../CONTRIBUTING.md) | Report a problem or work on code and documentation. |
+| [Project website and search](discovery.md) | Maintain the public site or connect Google Search Console. |
 
 For detailed technical evidence, see [memory measurements](model-resources.md),
 [quality notes](model-quality.md) and the [historical audit](production-readiness.md).

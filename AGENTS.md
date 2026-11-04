@@ -34,3 +34,10 @@ Documentation screenshots must use isolated example projects and synthetic refer
 never the user's profiles, recordings, scripts, names or local filesystem paths.
 Use plain punctuation in first-party documentation instead of em dashes. Keep
 numeric ranges readable with ASCII hyphens; preserve third-party license texts.
+
+The public project site lives under `site/` and is built with Python's standard
+library by `scripts/build-site.py`; run `scripts/check-site.py` before publishing.
+Deploy only its explicit static artifact through the Pages workflow. Never serve
+the inference app, local recordings, data directories or runtime on GitHub Pages.
+Keep English and Russian pages equivalent, with self-canonicals and reciprocal
+language links. Generate the public model list from the application catalog.

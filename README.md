@@ -8,10 +8,11 @@
 
 **English** · [Русский](README.ru.md)
 
-[Get started](#get-started) · [Screenshots](#screenshots) · [Models](docs/models.md) · [Help](docs/troubleshooting.md) · [Roadmap](docs/roadmap.md)
+[Website](https://evgenykravchenko.github.io/voice-studio/) · [Get started](#get-started) · [Screenshots](#screenshots) · [Models](docs/models.md) · [Help](docs/troubleshooting.md) · [Roadmap](docs/roadmap.md)
 
 ![Voice Studio: script, voice settings, recorded takes and the project timeline](docs/images/en/studio.png)
 
+Voice Studio is an open-source local text-to-speech (TTS) application.
 Create narration for lessons, videos and podcasts in a browser-based studio.
 Generate takes, assemble scenes and improve recordings on your own computer.
 Choose from 45 downloadable models for speech and audio tasks; install only
@@ -34,6 +35,11 @@ Java and Python run the local backend; the launcher sets up the required tools.
 | Improve recordings | Upload a file or record with a microphone; compare before and after. |
 | Manage models | Browse 45 entries; filter, download, cancel and resume installations. |
 | Keep your work | Projects, takes, voice profiles and processing history stay on disk. |
+
+Speech models include **Fish S2 Pro, Qwen3-TTS, Chatterbox, CosyVoice 3, VoxCPM2,
+Kokoro, Piper and Silero**. Whisper and GigaAM transcribe reference recordings;
+Resemble Enhance improves existing audio. See the [complete model catalog](https://evgenykravchenko.github.io/voice-studio/models/)
+for every integration, voice mode, model file size and license.
 
 ## Get started
 

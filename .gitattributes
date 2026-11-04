@@ -2,3 +2,4 @@
 .agents/skills/hallmark/** linguist-vendored
 vendor/** linguist-vendored
 engines/wheels/** linguist-vendored
+site/** linguist-documentation
