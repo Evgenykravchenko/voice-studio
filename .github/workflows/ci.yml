@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, edited, ready_for_review]
   push:
-    branches: [main, 'release/**', 'codex/**']
+    branches: [main, 'release/**']
   workflow_dispatch:
 
 permissions:
@@ -99,7 +99,7 @@ jobs:
 
   required:
     name: Required checks
-    if: always()
+    if: always() && !cancelled()
     needs: [repository, frontend, java, python]
     runs-on: ubuntu-24.04
     timeout-minutes: 2
