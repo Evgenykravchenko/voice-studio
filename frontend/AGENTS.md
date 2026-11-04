@@ -117,7 +117,7 @@ to .app-header nav so pagination keeps its own44px controls. Browser multipart Q
 local proxy, not route.fetch interception, which can omit binary file bodies.
 
 Use one compact app scale across views:14px UI,12px labels,16px script,18px section
-heads,24px page heads,36–40px desktop controls and44px coarse-pointer targets. Never
+heads,24px page heads,36-40px desktop controls and44px coarse-pointer targets. Never
 increase studio text to20px just because the viewport is wide. From900px up, keep scene
 list, editor and inspector side by side; primary settings and generation should fit a
 standard1280x720/1366x768 viewport without page or inspector scrolling. Below900px use a

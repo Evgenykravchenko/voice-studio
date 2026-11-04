@@ -1,0 +1,4 @@
+# Keep GitHub language statistics focused on application code.
+.agents/skills/hallmark/** linguist-vendored
+vendor/** linguist-vendored
+engines/wheels/** linguist-vendored

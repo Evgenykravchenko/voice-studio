@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions and workflows / Вопросы и сценарии
+    url: https://github.com/Evgenykravchenko/voice-studio/discussions
+    about: Ask questions or share model feedback in English or Russian.
+  - name: Setup and help / Установка и помощь
+    url: https://github.com/Evgenykravchenko/voice-studio/blob/main/docs/README.md
+    about: Read the English and Russian guides before reporting a setup problem.

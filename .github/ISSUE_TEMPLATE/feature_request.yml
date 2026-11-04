@@ -1,0 +1,22 @@
+name: Feature request / Предложение
+description: Suggest an improvement with a concrete use case. Можно писать по-русски.
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Your task / Ваша задача
+      description: What are you trying to make, and what is difficult today? Можно писать на русском.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired behavior / Желаемое поведение
+      description: Describe the result you want in the studio.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Контекст
+      description: Optional. Platform, model, language and any alternatives you have tried.

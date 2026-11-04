@@ -1,0 +1,47 @@
+name: Bug report / Ошибка
+description: Something does not work as expected. Можно писать по-русски.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem in English or Russian. Remove personal recordings, scripts, tokens and local paths from attachments and logs.
+        Опишите проблему на русском или английском. Уберите личные записи, тексты, токены и пути из вложений и журналов.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / Что произошло?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Шаги повторения
+      placeholder: |
+        1. Open...
+        2. Choose...
+        3. Run...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Computer and macOS / Компьютер и macOS
+      placeholder: Apple M2, 16 GB RAM, macOS 15
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit / Версия или коммит
+      description: Repository commit or the date you downloaded the source, if known.
+  - type: input
+    id: model
+    attributes:
+      label: Model and language / Модель и язык
+      description: Include the catalog variant if this involves a model.
+  - type: textarea
+    id: details
+    attributes:
+      label: Error message or screenshot / Ошибка или скриншот
+      description: Optional. Share only information that is safe to publish.

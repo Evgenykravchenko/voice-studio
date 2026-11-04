@@ -13,6 +13,8 @@ New here? Follow [Setup](setup.md), then [Using the studio](guide.md).
 | [Troubleshooting](troubleshooting.md) | Resolve a download, playback, quality or memory problem. |
 | [Development and CLI](development.md) | Work on the code or use the optional command line. |
 | [Release status](status.md) | Understand supported platforms and known limitations. |
+| [Roadmap](roadmap.md) | See planned work or suggest a concrete use case. |
+| [Contributing](../CONTRIBUTING.md) | Report a problem or work on code and documentation. |
 
 For detailed technical evidence, see [memory measurements](model-resources.md),
 [quality notes](model-quality.md) and the [historical audit](production-readiness.md).

@@ -11,7 +11,7 @@ transcript; your speech-synthesis model produces the new recording later.
 
 1. Open **Voices → Add voice** and give the profile a name, such as “Narrator”.
 2. Upload a recording of one speaker: no background music, strong echo or overlapping voices.
-3. Choose the start and excerpt length. **10–30 seconds** is a useful starting point; the allowed range is 5–30 seconds.
+3. Choose the start and excerpt length. **10-30 seconds** is a useful starting point; the allowed range is 5-30 seconds.
 4. Choose the recording's language and prepare the voice.
 5. Listen to the excerpt. Correct its transcript to match every spoken word, then save.
 

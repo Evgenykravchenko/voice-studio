@@ -73,10 +73,10 @@ runtime packages, caches and extracted dictionaries need additional space.
 | Example | Download, approximately | Observed peak RSS |
 | --- | ---: | ---: |
 | Piper Dmitri | 0.06 GB | 0.21 GiB |
-| Silero RU | 0.15 GB | 1.00–1.01 GiB |
+| Silero RU | 0.15 GB | 1.00-1.01 GiB |
 | Whisper Small | 0.20 GB | 0.55 GiB |
-| Resemble Enhance | 0.71 GB | 6.15–6.19 GiB |
-| Fish S2 Pro | 6.73 GB | 6.12–9.56 GiB |
+| Resemble Enhance | 0.71 GB | 6.15-6.19 GiB |
+| Fish S2 Pro | 6.73 GB | 6.12-9.56 GiB |
 
 Only the current task loads its model; jobs are serialized. You do not need all
 45 models on disk. The published measurements used a 36 GiB Apple Silicon Mac;

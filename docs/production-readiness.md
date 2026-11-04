@@ -1,6 +1,6 @@
 # Production readiness audit
 
-Status: **in progress — not release approved** (2026-10-31, local date).
+Status: **in progress: not release approved** (2026-10-31, local date).
 
 Current consolidated evidence: [release-status.md](release-status.md). Historical checkpoints below may be superseded.
 The current catalog has 45 entries: OpenAudio S1 Mini was removed at the user's
@@ -427,7 +427,7 @@ listed files before deduplicating shared dependencies, excluding runtimes and dy
   checks disk expansion and rejects corrupt/unsafe archives. All 54 presets were rerun. Offline
   Whisper Turbo screening matched the test phrase closely for53 presets; zf_xiaoni needs manual
   Mandarin review (character agreement .5333, partly homophones). ASR is not a perceptual verdict.
-- Montage real UI regression passed: pointer/keyboard ordering, undo, exclusion, .3–2.1s trim,
+- Montage real UI regression passed: pointer/keyboard ordering, undo, exclusion, .3-2.1s trim,
   −6dB scene gain,5s per-scene gap,1.25s default gap, reload and actual WAV/MP3 export.
   The rendered12.05s WAV had the expected duration and exact digital silence in both gaps.
 - ASR language compatibility is checked before processing. Voice imports now freeze the
@@ -472,7 +472,7 @@ listed files before deduplicating shared dependencies, excluding runtimes and dy
 - Master enhancement resampling originally left29 nonzero edge samples in a1.5s inserted gap;
   neural restoration amplified those samples. Canonical conversion now restores source PCM
   silence ranges before inference. The repeated real5.5s enhanced master contains zero nonzero
-  samples across the entire2.0–3.5s gap; source audio and duration remain unchanged.
+  samples across the entire2.0-3.5s gap; source audio and duration remain unchanged.
 - Spark-TTS completed an actual2.21GB installation. Its first inference exposed a BatchNorm training-mode error in the
   audio tokenizer. The adapter now switches the plain tokenizer container’s neural modules to
   inference mode. Actual generation passed after this fix; local Whisper Turbo recovered the
@@ -576,7 +576,7 @@ Fresh-runtime findings and repairs:
    anonymous release assets and all release gates. Roll out the Java jar only after validation.
 6. Do not certify all46 models or production readiness from the currently successful subset.
 
-## Reference language validation and UI — 2026-10-31
+## Reference language validation and UI: 2026-10-31
 
 Removed the RU/EN-only reference-language restriction across Java, Python and the voice form.
 The form now exposes languages declared by the selected recognizer; it retains an unsupported
@@ -645,7 +645,7 @@ license-compatible reading conversion before Japanese kanji input can be called 
 Do not count the manual-kana diagnostic as a production adapter fix. Both submitted scripts and
 outputs are separate immutable UI takes (`japanese-ui.json`, `japanese-kana-ui.json`).
 
-## Automatic Japanese readings — implementation under verification
+## Automatic Japanese readings: implementation under verification
 
 Added offline Fugashi/UniDic readings for Chatterbox Japanese kanji input and CosyVoice
 Japanese text/reference input. Chatterbox uses kana readings while retaining the original
@@ -728,7 +728,7 @@ The union contains44distinct successful variants using the same independent runt
 were rechecked. These historical runs do not prove that every variant was rerun on one final
 source fingerprint. MOSS-TTS UI Whisper screen also recovered its submitted text exactly.
 
-## Reference duration boundaries — running
+## Reference duration boundaries: running
 
 Added opt-in `scripts/verify-reference-boundaries.py`: serial real cloning for every ready
 clone-capable model at5and30seconds, with per-case model artifact/state checks, immutable
@@ -883,7 +883,7 @@ before starting. CLI imports are pinned to the current source, and bundled ffmpe
 repaired atomically/relatively, including dangling links and /var→/private/var aliases.
 The full APFS-cloned relocation bootstrap and later native checks are currently running.
 
-## Verified checkpoint — 2026-11-01
+## Verified checkpoint: 2026-11-01
 
 The relocation/bootstrap, full 44-model short sweep in both environments and the
 production rollout described above completed. The consolidated current state is in
@@ -926,7 +926,7 @@ Silero's official TLS endpoint still times out on01.11. OpenAudio still requires
 legitimate author-granted weights. Other recorded quality/preset/cleanup reviews
 remain open; this checkpoint does not approve the full46-model production release.
 
-## Preset review and catalog language controls — 2026-11-01
+## Preset review and catalog language controls: 2026-11-01
 
 The catalog exposes80preset choices:75available (Kokoro54, Qwen CustomVoice9,
 Orpheus8, four single-voice Piper models) and5Silero choices awaiting its official
@@ -1156,7 +1156,7 @@ and the exact idle QA7092server was stopped. Full-model release approval remains
 the separately recorded author-access and quality limitations.
 
 
-### 02.11.2026 — полная история улучшения аудио
+### 02.11.2026: полная история улучшения аудио
 
 Устранён отдельный предел истории очистки: прежний bootstrap API возвращал
 последние 100 задач, а поиск и страницы работали только с этим массивом.
@@ -1196,7 +1196,7 @@ the separately recorded author-access and quality limitations.
 совпадают со сборкой; прежние хэшированные ассеты оставлены для открытых вкладок.
 Временный QA API остановлен. Код Python и модели это обновление не меняет.
 
-### 02.11.2026 — Silero: официальный источник восстановился
+### 02.11.2026: Silero: официальный источник восстановился
 
 Повторный HEAD официального `v5_6_ru.pt` завершился HTTP 200, Content-Length
 147664410. Модель установлена штатным API каталога в рабочий проект, затем
@@ -1215,7 +1215,7 @@ the separately recorded author-access and quality limitations.
 
 Проверены семь дополнительных сценариев: SSML-паузы 500/1500ms, slow/fast,
 высота high, знак ударения `+`, длинный русский текст с `[pause:1.25]`.
-Разница длительности SSML-версий — 1.0000000000000004 с; slow длиннее fast.
+Разница длительности SSML-версий: 1.0000000000000004 с; slow длиннее fast.
 В длинном WAV 48000 Гц есть ровно 60000 подряд нулевых отсчётов, длительность
 40.295 с. Ударения/высота приняты моделью; измерения не удостоверяют субъективно
 правильное ударение и натуральность каждого слова.
@@ -1225,13 +1225,13 @@ the separately recorded author-access and quality limitations.
 плеер воспроизводит/перематывает результат. Проекты и выбор Fish рабочей студии
 не менялись. Совокупно проверены 15 настоящих WAV; в 14 словесный текст точно
 совпал у Whisper Large V3 и Qwen-ASR. Длинный WAV требует лексической проверки:
-Whisper добавил «Продолжение следует», Qwen иначе распознал «ошибку», GigaAM —
+Whisper добавил «Продолжение следует», Qwen иначе распознал «ошибку», GigaAM:
 фрагмент «Перед добавлением». Исходник/хэш сохранялись между ASR-прогонами;
 перегенерации ради совпадения не было. По отдельным разногласиям не делается
 вывод об идеальной речи либо установленной ошибке синтеза.
 
 108 Python-тестов прошли после уточнения контракта каталога: для URL проверяется
-HTTPS и закреплённый SHA-256, для Hugging Face — 40-символьный commit hash.
+HTTPS и закреплённый SHA-256, для Hugging Face: 40-символьный commit hash.
 Первый прогон выявил прежнее требование commit hash даже для прямого URL;
 его журнал сохранён. Код Java и интерфейс этим изменением не затрагивались.
 Текущий каталог: 46 моделей, 45 готовы; 0 структурных ошибок. Все существовавшие
@@ -1245,7 +1245,7 @@ HTTPS и закреплённый SHA-256, для Hugging Face — 40-симво
 запроса на Hugging Face; вход/принятие условий и обход доступа не выполнялись.
 Полная проверка всех 46 моделей остаётся незавершённой.
 
-### 02.11.2026 — начат полный прогон скачивания в независимый пустой кэш
+### 02.11.2026: начат полный прогон скачивания в независимый пустой кэш
 
 Сводка прежних установщиков выявила 14 исходно кэшированных моделей: у них
 были реальные WAV/проверки хэшей, но этих данных недостаточно для полного
@@ -1274,7 +1274,7 @@ OpenAudio сохранена в общем перечне как требующ�
 независимо установленные окружения для последующего синтеза с новыми весами.
 Проверка нового скачивания сама по себе не доказывает успешный инференс.
 
-### 02.11.2026 — родная разметка OpenAudio и мобильная подсказка
+### 02.11.2026: родная разметка OpenAudio и мобильная подсказка
 
 Страница автора S1 Mini показывает круглые скобки `(angry)`, `(excited)`,
 `(whispering)`, `(laughing)`. В каталоге раньше стоял общий тип `fish`, а редактор
@@ -1305,7 +1305,7 @@ Hallmark 0 FAIL и два прежних объяснённых предупре
 Старые ассеты сохранены для открытых вкладок. QA API 7095 остановлен.
 Журналы: `.runtime/release-audit/openaudio-markup/`.
 
-### 02.11.2026 — промежуточные результаты нового кэша
+### 02.11.2026: промежуточные результаты нового кэша
 
 Скачаны четыре Piper, OpenVoice, Whisper Base/Small и Silero; остальные очереди
 живы и продолжают реальную передачу. Перед каждой новой нейросетевой задачей
@@ -1317,7 +1317,7 @@ Hallmark 0 FAIL и два прежних объяснённых предупре
 Пять из шести новых речевых WAV точно распознаны Whisper Large V3. В коротком
 Piper Ruslan оба ASR, Whisper и Qwen, пропустили «и» в «ясно и естественно».
 Исходный текст и WAV не менялись; это отмечено для прослушивания, не скрыто
-перегенерацией. Непустой ASR-транскрипт — технический успех, а не гарантия
+перегенерацией. Непустой ASR-транскрипт: технический успех, а не гарантия
 дословности. Например, новая Whisper Base также ошибается в контрольном эталоне.
 Отдельно сопоставлены имеющиеся реальные RU-результаты девяти ASR в двух
 окружениях с заданным текстом синтетического эталона: `.runtime/release-audit/asr-quality/`.
@@ -1329,10 +1329,10 @@ Piper Ruslan оба ASR, Whisper и Qwen, пропустили «и» в «яс�
 соединения обрывались, библиотека продолжала загрузку Range-запросами; эти логи
 сохранены. Нельзя приравнивать наличие прогресса/части файла к успешной установке.
 
-### 02.11.2026 — черновики инструментов моделей
+### 02.11.2026: черновики инструментов моделей
 
 В реальном интерфейсе OpenVoice воспроизведена потеря выбранного файла:
-открыть инструмент, выбрать WAV, перейти в «Голоса» и вернуться — инструмент
+открыть инструмент, выбрать WAV, перейти в «Голоса» и вернуться: инструмент
 закрывался, локальный state исчезал. Первый тестовый селектор ожидал другое
 название кнопки; после сверки фактической подписи воспроизведение подтвердило
 нулевое число рабочих панелей после возврата, без запуска обработки.
@@ -1373,7 +1373,7 @@ connection reset by peer. Частичные данные сохранены, м
 Ни весь холодный прогон, ни все 46 моделей этим срезом не подтверждены.
 
 
-### 02.11.2026 — восстановление скачивания после сетевого обрыва
+### 02.11.2026: восстановление скачивания после сетевого обрыва
 
 Три реальные попытки холодной установки выявили `httpx.ReadError`, errno54.
 Добавлены максимум три попытки передачи одного файла с паузами 1 и 2 секунды.
@@ -1421,7 +1421,7 @@ JAR и index.html имеют прежние хэши. Резервная коп�
 продолжают работу; они не останавливались по окончании наблюдения.
 
 
-### 02.11.2026 — реальная отмена и продолжение установки через интерфейс
+### 02.11.2026: реальная отмена и продолжение установки через интерфейс
 
 В `.runtime/release-audit/download-resume-ui/` создана третья изолированная
 установка: собственные БД/задания, физически отсутствовавший кэш, текущие исходники,
@@ -1429,7 +1429,7 @@ JAR и index.html имеют прежние хэши. Резервная коп�
 Это проверка нового кэша модели, а не повторный bootstrap всех зависимостей.
 В браузере без подмен каталога/файлов запущена установка официального Piper Dmitri.
 После начала передачи нажата отмена. Сохранён .incomplete размером 10485760 байт;
-модель не ready, кнопка — «Продолжить». Остановлен только QA API7098, затем
+модель не ready, кнопка: «Продолжить». Остановлен только QA API7098, затем
 запущен с той же БД. Частичный файл и состояние отмены пережили перезапуск.
 
 Через UI нажато продолжение. Полная установка завершилась, закреплённые размеры
@@ -1451,7 +1451,7 @@ Piper Ruslan остаётся лексической проверкой. Три 
 живыми по тем же сессиям, не перезапускались. Каталог из 46 целиком ещё не принят.
 
 
-### 02.11.2026 — закрытый потребитель прогресса и ещё два холодных запуска
+### 02.11.2026: закрытый потребитель прогресса и ещё два холодных запуска
 
 Расширенный тест показал: BrokenPipeError при закрытии канала прогресса попадала
 в общий ConnectionError и вызывала три попытки вместо одной. Исходный провал
@@ -1492,7 +1492,7 @@ download-resume-ui/production-preservation.json. Рабочий API не пер�
 QA API7098 остановлен после проверки. Полный каталог из 46 ещё не принят.
 
 
-### 02.11.2026 — холодные Dots MeanFlow, LongCat и Chatterbox Multilingual
+### 02.11.2026: холодные Dots MeanFlow, LongCat и Chatterbox Multilingual
 
 После подтверждения живых прежних очередей новые модели последовательно выполнили
 реальные офлайн-задачи в том же независимом кэше. Проверены валидный непустой WAV,
@@ -1512,7 +1512,7 @@ ready-progress-chatterbox.log и screen-mf-longcat-chatterbox.log. Новых и
 43 Java относятся к установленным версиям. Каталог из 46 не объявлен готовым.
 
 
-### 02.11.2026 — сверка исходных артефактов и третья ASR для Piper Ruslan
+### 02.11.2026: сверка исходных артефактов и третья ASR для Piper Ruslan
 
 Новый read-only verifier сопоставил текущие WAV/PCM-метрики/SHA-256 с исходными
 inference.json, ID/длительности/sampleRate завершающих событий с заданием,
@@ -1531,7 +1531,7 @@ SHA d5ec0e41094f9d21ee5517a75deac9b170a9dc4b5891ba8c95e15536d53a1b2c.
 безударная гласная ɪ. Все фонемы имеют ID в конфигурации модели, включая эту
 гласную. Приложение передаёт исходный текст в Piper.synthesize; удаление слова
 до нейросети не обнаружено. Это локализует проверку, но не доказывает на слух
-точную причину расхождения — TTS или распознавание. Исходник не заменён и не
+точную причину расхождения: TTS или распознавание. Исходник не заменён и не
 перегенерирован ради совпадения. Файлы: model-transcripts-gigaam-v3.json,
 ruslan-gigaam.log, ruslan-phonemes.json и соответствующие скрипты в cold-catalog/.
 
@@ -1550,7 +1550,7 @@ GigaAM отмечена диагностическим подмножество�
 japanese-normalization/responsive.cjs; наличие этих сценариев не приписывает
 новому срезу повторный рендер всех состояний.
 
-### 02.11.2026 — все доступные веса скачаны, все 45 моделей прошли UI
+### 02.11.2026: все доступные веса скачаны, все 45 моделей прошли UI
 
 Три первоначальные очереди завершились без перезапуска. С учётом отдельных
 успешных повторов Whisper Turbo, Whisper Medium и Resemble все 45 доступных
@@ -1578,7 +1578,7 @@ Resemble проверены фактические этапы denoise/restore/ma
 
 37 WAV сверены с серверными ID/моделью, хэшем, длительностью и sampleRate.
 Звуковой эффект исключён из речевой сверки: Qwen-ASR точно подтвердил все
-36 речевых записей, Whisper — 35. В OpenVoice Whisper услышал “I'm” вместо
+36 речевых записей, Whisper: 35. В OpenVoice Whisper услышал “I'm” вместо
 “I am”, Qwen совпал с исходным текстом. Строгий review сохранён. Предыдущий
 прямой Piper Ruslan пользователь прослушал и сообщил «все отлично слышно»;
 это оценка конкретной записи, исходные расшифровки трёх ASR не заменены.
@@ -1601,7 +1601,7 @@ UI-маршрутов, неизменность WAV и исходных ASR-ст
 Журналы: cold-ui/results.json, asr-results.json, tool-results.json,
 voice-roundtrip-results.json, inference.json, model-transcripts-*.json,
 postflight.json, verified-summary.json, verify-summary.log; cold-catalog/
-checkpoint.json и evidence-integrity.json. Изменения этого этапа — проверочные
+checkpoint.json и evidence-integrity.json. Изменения этого этапа: проверочные
 сценарии и документация. Прежние 113 Python / 74 frontend / 43 Java относятся
 к тем же установленным версиям продукта, повторных изменений приложения нет.
 
@@ -1610,7 +1610,7 @@ checkpoint.json и evidence-integrity.json. Изменения этого эта
 остаются отдельными вопросами. Положительные короткие контрольные записи
 не отменяют прежние результаты и не сертифицируют Windows/Linux или 8 ГБ.
 
-### 02.11.2026 — удаление OpenAudio по решению пользователя
+### 02.11.2026: удаление OpenAudio по решению пользователя
 
 По явному запросу удалена OpenAudio S1 Mini: запись каталога, отдельный адаптер,
 ветка синтеза, recipe/lock и source archive, установленное окружение fish-legacy,
@@ -1631,14 +1631,14 @@ UI-состояния RU/EN × 320/1366px: в каталоге 45 готовых
 Проверенный frontend установлен атомарной заменой index.html после assets.
 Java JAR и PID77668 не менялись, API не перезапускался. До/после совпали оба
 проекта, связи заданий и все 152 защищённых файла data/outputs. Рабочая выбранная
-модель — Fish S2 Pro. QA API7099 остановлен. Документация и перечень лицензий
+модель: Fish S2 Pro. QA API7099 остановлен. Документация и перечень лицензий
 обновлены; старые матрицы из 46 моделей описывают прежний каталог.
 
 Журналы: .runtime/release-audit/remove-openaudio/; резервные исходники и интерфейс:
 .runtime/releases/20261102T115412Z-remove-openaudio/. Новый index SHA-256:
 889789b39f04a2f3a94253146dc02103e3e06375a5b4b0d7d5817338398a8c9b.
 
-### 02.11.2026 — состав публичных исходников
+### 02.11.2026: состав публичных исходников
 
 Проверены cached/untracked nonignored кандидаты только папки этого проекта,
 включая содержимое шести архивов native-зависимостей. Характерных секретов,
@@ -1667,7 +1667,7 @@ QA API7099 использовал отдельные пустые data/cache: р
 Журналы находятся в .runtime/release-audit/publication/; рекомендации:
 docs/publication.md. Внешняя публикация/создание репозитория не выполнялись.
 
-### 02.11.2026 — согласованная очистка локальной установки
+### 02.11.2026: согласованная очистка локальной установки
 
 По запросу пользователя удалены локальные веса 42 ненужных моделей, девять
 неиспользуемых дополнительных окружений, большие тестовые установки/копии,
@@ -1686,7 +1686,7 @@ docs/publication.md. Внешняя публикация/создание реп
 не находятся на диске; исторические статусы не означают их текущего наличия.
 
 После удаления все три модели снова выполнили настоящие задачи с запретом сети:
-Fish — озвучку, Whisper — распознавание, Resemble — обработку записи.
+Fish: озвучку, Whisper: распознавание, Resemble: обработку записи.
 Проверочные аудио/окружение затем удалены, сохранены только небольшие отчёты.
 Сравнение до/после подтвердило те же 2 проекта, 12 связей заданий и 156 защищённых
 файлов, включая локальные образцы и их манифест. Замер du: вся папка около
@@ -1694,7 +1694,7 @@ Fish — озвучку, Whisper — распознавание, Resemble — о
 прирост свободного места, чем разница этих каталогов. Рабочие данные и исходники
 не удалялись, студия запускается стандартным scripts/studio.sh.
 
-### 04.11.2026 — двуязычная документация и анонимные иллюстрации
+### 04.11.2026: двуязычная документация и анонимные иллюстрации
 
 Главный README теперь на английском с прямой ссылкой на README.ru.md. Добавлены
 парные руководства установки, работы, моделей, данных, ошибок, разработки и
@@ -1706,7 +1706,7 @@ Fish — озвучку, Whisper — распознавание, Resemble — о
 профили/записи не использовались. Снимки занимают около 1,2 МБ. Проверены
 198 относительных ссылок, 16 якорей, 44 браузерных состояния на 390/1280px
 и 22 перехода между языками. Изображения просмотрены, временные состояния
-загрузки пересняты. Основной текст обоих README — по 96 строк.
+загрузки пересняты. Основной текст обоих README: по 96 строк.
 
 Сравнение подтвердило неизменность 2 проектов, 12 связей заданий и 155
 пользовательских файлов. Набор трёх установленных моделей сохранён. Изменений

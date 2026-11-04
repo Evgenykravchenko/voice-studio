@@ -1,16 +1,24 @@
 # Voice Studio
 
-**Turn a script into speech. Clone a voice, assemble scenes, and clean up recordings — locally on your Mac.**
+**Local text-to-speech, voice cloning and audio enhancement for your Mac.**
+
+[![Status: beta](https://img.shields.io/badge/status-beta-e8ad43)](docs/status.md)
+[![Platform: macOS 14+ Apple Silicon](https://img.shields.io/badge/macOS_14%2B-Apple_Silicon-30363d)](docs/setup.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-30363d)](LICENSE)
 
 **English** · [Русский](README.ru.md)
 
-[Get started](#get-started) · [User guide](docs/guide.md) · [Models](docs/models.md) · [Help](docs/troubleshooting.md)
+[Get started](#get-started) · [Screenshots](#screenshots) · [Models](docs/models.md) · [Help](docs/troubleshooting.md) · [Roadmap](docs/roadmap.md)
 
 ![Voice Studio: script, voice settings, recorded takes and the project timeline](docs/images/en/studio.png)
 
-Voice Studio runs in your browser with a local Java and Python backend. Install the
-models you need and generate speech without a cloud inference service. English
-and Russian interfaces, light and dark themes.
+Create narration for lessons, videos and podcasts in a browser-based studio.
+Generate takes, assemble scenes and improve recordings on your own computer.
+Choose from 45 downloadable models for speech and audio tasks; install only
+what you need. Inference runs locally after setup and model downloads.
+
+The interface is available in English and Russian, with light and dark themes.
+Java and Python run the local backend; the launcher sets up the required tools.
 
 > [!NOTE]
 > **Beta for macOS 14+ on Apple Silicon.** Windows and Linux support is planned.
@@ -66,13 +74,36 @@ Check card sizes before downloading: weights and dependencies can take gigabytes
 ### 3. Create a recording
 
 For cloning, open **Voices → Add voice**. Upload one speaker's clear recording,
-choose a 10–30 second excerpt, review its transcript and save. This creates a
+choose a 10-30 second excerpt, review its transcript and save. This creates a
 reference profile; it does not retrain the model.
 
 Open **Speech**, enter your text, choose the model and voice, and click
 **Generate scene**. Listen to the take or open **Montage** to combine scenes.
 For built-in voices, choose a speaker directly in Speech.
 [The complete workflow →](docs/guide.md)
+
+## Screenshots
+
+<details>
+<summary>Explore voices, scene editing, audio enhancement and the light theme</summary>
+
+### Reusable voice profiles
+
+![Voice profiles with sample playback, search and actions](docs/images/en/voices.png)
+
+### Scene editing
+
+![Montage with scene ordering, audio trimming and final export](docs/images/en/montage.png)
+
+### Audio enhancement
+
+![Recording upload and before/after audio comparison](docs/images/en/cleanup.png)
+
+### Light theme
+
+![Speech workspace in the light theme](docs/images/en/light.png)
+
+</details>
 
 ## Guides
 
@@ -94,3 +125,12 @@ use example projects and a synthetic reference voice.
 The app code is [MIT licensed](LICENSE). Models and third-party components have
 their own terms: see their cards and [third-party notices](THIRD_PARTY_NOTICES.md).
 [Release status](docs/status.md) documents tested behavior and known limitations.
+
+## Feedback and contributions
+
+Ask questions and share model or workflow feedback in [Discussions](https://github.com/Evgenykravchenko/voice-studio/discussions).
+Found a bug or have a concrete feature request? [Open an issue](https://github.com/Evgenykravchenko/voice-studio/issues/new/choose).
+English and Russian are welcome. Read [Contributing](CONTRIBUTING.md) for code and documentation changes.
+
+See the [roadmap](docs/roadmap.md) for planned work. If the studio is useful to you,
+consider giving the repository a star or sharing it with someone who works with audio.

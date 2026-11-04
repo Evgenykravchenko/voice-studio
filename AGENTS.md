@@ -32,3 +32,5 @@ User guides have matching .md / .ru.md pages with direct language-switch links.
 Keep the quick start to the single studio launcher; put optional detail in guides.
 Documentation screenshots must use isolated example projects and synthetic references,
 never the user's profiles, recordings, scripts, names or local filesystem paths.
+Use plain punctuation in first-party documentation instead of em dashes. Keep
+numeric ranges readable with ASCII hyphens; preserve third-party license texts.
