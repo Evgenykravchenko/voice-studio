@@ -5,6 +5,7 @@
 [![Статус: бета](https://img.shields.io/badge/статус-бета-e8ad43)](docs/status.ru.md)
 [![Платформа: macOS 14+ Apple Silicon](https://img.shields.io/badge/macOS_14%2B-Apple_Silicon-30363d)](docs/setup.ru.md)
 [![Лицензия: MIT](https://img.shields.io/badge/лицензия-MIT-30363d)](LICENSE)
+[![CI](https://github.com/Evgenykravchenko/voice-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/Evgenykravchenko/voice-studio/actions/workflows/ci.yml)
 
 [English](README.md) · **Русский**
 
@@ -131,6 +132,7 @@ Resemble Enhance улучшает готовое аудио. Все интегр
 Код приложения распространяется по [MIT](LICENSE). У моделей и сторонних
 компонентов свои условия: смотрите карточки и [список лицензий](THIRD_PARTY_NOTICES.md).
 Проверки и оставшиеся ограничения описаны в [состоянии выпуска](docs/status.ru.md).
+[Политика безопасности](SECURITY.ru.md) · [Участие и правила коммитов](CONTRIBUTING.ru.md) · [Порядок релизов](docs/releasing.ru.md)
 
 ## Обратная связь и участие
 

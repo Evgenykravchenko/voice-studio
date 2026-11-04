@@ -16,6 +16,8 @@ New here? Follow [Setup](setup.md), then [Using the studio](guide.md).
 | [Roadmap](roadmap.md) | See planned work or suggest a concrete use case. |
 | [Contributing](../CONTRIBUTING.md) | Report a problem or work on code and documentation. |
 | [Project website and search](discovery.md) | Maintain the public site or connect Google Search Console. |
+| [Releases and repository rules](releasing.md) | Understand protected branches, version tags and free CI. |
+| [Security policy](../SECURITY.md) | Send a private vulnerability report and understand security boundaries. |
 
 For detailed technical evidence, see [memory measurements](model-resources.md),
 [quality notes](model-quality.md) and the [historical audit](production-readiness.md).

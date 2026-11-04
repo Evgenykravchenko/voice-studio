@@ -41,3 +41,10 @@ Deploy only its explicit static artifact through the Pages workflow. Never serve
 the inference app, local recordings, data directories or runtime on GitHub Pages.
 Keep English and Russian pages equivalent, with self-canonicals and reciprocal
 language links. Generate the public model list from the application catalog.
+
+Repository changes go through a branch and PR, never a direct push to main or
+release/*. Use Conventional Commits with a mandatory one-word lowercase scope:
+type(scope): description. Use the same format for PR titles; preserve published
+history. Keep CODEOWNERS, required CI and release tag protections in force.
+CI runs only on standard Ubuntu runners without model weights or cloud inference.
+Do not enable paid runners, Marketplace services or account-wide billing changes.

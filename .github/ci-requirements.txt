@@ -1,0 +1,9 @@
+# Lightweight unit-test dependencies. No model runtimes or weights.
+numpy==2.5.4
+soundfile==0.14.0
+safetensors==0.8.0
+httpx==0.28.1
+huggingface-hub==1.33.0
+imageio-ffmpeg==0.7.0
+scipy==1.18.1
+PyYAML==6.0.3
