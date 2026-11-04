@@ -1,0 +1,118 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited, ready_for_review]
+  push:
+    branches: [main, 'release/**', 'codex/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  repository:
+    name: Repository and commits
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Install policy parser
+        run: python -m pip install --disable-pip-version-check PyYAML==6.0.3
+      - name: Check publication and workflow policy
+        run: python scripts/check-repository.py
+      - name: Check Conventional Commits and PR title
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+            python scripts/check-commits.py --event "$GITHUB_EVENT_PATH"
+          else
+            python scripts/check-commits.py --base "$(git rev-parse HEAD^)" --head "$(git rev-parse HEAD)"
+          fi
+      - name: Build and check project website
+        run: |
+          python scripts/build-site.py
+          python scripts/check-site.py
+
+  frontend:
+    name: Frontend
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.22.1'
+      - name: Install locked frontend dependencies
+        run: npm exec --yes --package=pnpm@11.25.0 -- pnpm --dir frontend install --frozen-lockfile
+      - name: Typecheck and build
+        run: npm exec --yes --package=pnpm@11.25.0 -- pnpm --dir frontend build
+      - name: Run frontend tests against the built package
+        run: node --test frontend/tests/*.test.mjs
+
+  java:
+    name: Java API
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Run API and persistence tests
+        run: mvn --batch-mode --no-transfer-progress --file server/pom.xml test
+
+  python:
+    name: Python units
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      PYTHONPATH: src
+      PYTHONPYCACHEPREFIX: .runtime/pycache
+      HF_HUB_OFFLINE: '1'
+      HF_HUB_DISABLE_TELEMETRY: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - name: Install unit-test dependencies only
+        run: python -m pip install --disable-pip-version-check --requirement .github/ci-requirements.txt
+      - name: Run units without downloading models
+        run: python -m unittest discover -s tests
+
+  required:
+    name: Required checks
+    if: always()
+    needs: [repository, frontend, java, python]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Require every check to pass
+        env:
+          CHECK_RESULTS: ${{ toJSON(needs) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          results = json.loads(os.environ['CHECK_RESULTS'])
+          failed = [name for name, job in results.items() if job['result'] != 'success']
+          if failed:
+              raise SystemExit('Failed or skipped checks: ' + ', '.join(failed))
+          print('All required checks passed')
+          PY

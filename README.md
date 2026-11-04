@@ -5,6 +5,7 @@
 [![Status: beta](https://img.shields.io/badge/status-beta-e8ad43)](docs/status.md)
 [![Platform: macOS 14+ Apple Silicon](https://img.shields.io/badge/macOS_14%2B-Apple_Silicon-30363d)](docs/setup.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-30363d)](LICENSE)
+[![CI](https://github.com/Evgenykravchenko/voice-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/Evgenykravchenko/voice-studio/actions/workflows/ci.yml)
 
 **English** · [Русский](README.ru.md)
 
@@ -131,6 +132,7 @@ use example projects and a synthetic reference voice.
 The app code is [MIT licensed](LICENSE). Models and third-party components have
 their own terms: see their cards and [third-party notices](THIRD_PARTY_NOTICES.md).
 [Release status](docs/status.md) documents tested behavior and known limitations.
+[Security policy](SECURITY.md) · [Contribution and commit rules](CONTRIBUTING.md) · [Release process](docs/releasing.md)
 
 ## Feedback and contributions
 
