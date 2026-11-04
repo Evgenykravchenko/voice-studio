@@ -132,12 +132,10 @@ def check(output, base_url=None):
                 assert unquote(url.fragment) in Page(dest.read_text()).ids, (route, address)
             links_checked += 1
     sitemap = ET.parse(output / "sitemap.xml").getroot()
-    ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9", "x": "http://www.w3.org/1999/xhtml"}
+    ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     urls = sitemap.findall("s:url", ns)
     assert {node.find("s:loc", ns).text for node in urls} == {base + "/" + route for route in routes}
-    for node in urls:
-        p = pages[node.find("s:loc", ns).text[len(base) + 1:]]
-        assert {x.get("hreflang"): x.get("href") for x in node.findall("x:link", ns)} == {x["hreflang"]: x["href"] for x in p.links if x.get("rel") == "alternate"}
+    assert len(urls) == len(routes), "Duplicate sitemap entries"
     expected = {route + "index.html" for route in routes} | {"404.html", "sitemap.xml", ".nojekyll", "assets/site.css", "assets/icon.svg", "assets/en-studio.png", "assets/ru-studio.png"}
     files = {str(p.relative_to(output)) for p in output.rglob("*") if p.is_file()}
     assert files == expected, {"unexpected": sorted(files - expected), "missing": sorted(expected - files)}

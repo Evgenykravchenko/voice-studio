@@ -12,7 +12,7 @@ import re
 import shutil
 from pathlib import Path
 from urllib.parse import urlsplit
-from xml.etree.ElementTree import Element, SubElement, ElementTree, register_namespace
+from xml.etree.ElementTree import Element, SubElement, ElementTree, indent, register_namespace
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -190,16 +190,15 @@ def build(output, base_url=None):
         target.write_text(page_shell(lang, "models", body), encoding="utf-8")
 
     namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
-    xhtml = "http://www.w3.org/1999/xhtml"
     register_namespace("", namespace)
-    register_namespace("xhtml", xhtml)
     sitemap = Element(f"{{{namespace}}}urlset")
     for page in ("home", "models"):
         for lang in ("en", "ru"):
             node = SubElement(sitemap, f"{{{namespace}}}url")
             SubElement(node, f"{{{namespace}}}loc").text = base + "/" + route(lang, page)
-            for code in ("en", "ru", "x-default"):
-                SubElement(node, f"{{{xhtml}}}link", {"rel": "alternate", "hreflang": code, "href": base + "/" + route("en" if code == "x-default" else code, page)})
+    # HTML already declares reciprocal hreflang links. Keep the sitemap in the
+    # base protocol so it also validates with the standalone official XSD.
+    indent(sitemap, space="  ")
     ElementTree(sitemap).write(output / "sitemap.xml", encoding="utf-8", xml_declaration=True)
     (output / ".nojekyll").write_text("")
     (output / "404.html").write_text(f'<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | Voice Studio</title><link rel="stylesheet" href="{href("assets/site.css")}"><main class="container section"><h1>Page not found</h1><p><a href="{href()}">Voice Studio home</a></p><p><a lang="ru" href="{href("ru/")}">Главная на русском</a></p></main></html>', encoding="utf-8")
