@@ -1,0 +1,27 @@
+--- a/webrtcvad.py
++++ b/webrtcvad.py
+@@ -1,11 +1,11 @@
+-import pkg_resources
++from importlib.metadata import version
+ 
+ import _webrtcvad
+ 
+ __author__ = "John Wiseman jjwiseman@gmail.com"
+ __copyright__ = "Copyright (C) 2016 John Wiseman"
+ __license__ = "MIT"
+-__version__ = pkg_resources.get_distribution('webrtcvad').version
++__version__ = version('webrtcvad')
+ 
+ 
+ class Vad(object):
+--- a/setup.py
++++ b/setup.py
+@@ -42,7 +42,7 @@
+     name='webrtcvad',
+     author='John Wiseman',
+     author_email='jjwiseman@gmail.com',
+-    version='2.0.10',
++    version='2.0.10+voicestudio.1',
+     description=('Python interface to the Google WebRTC Voice '
+                  'Activity Detector (VAD)'),
+     long_description=long_description,

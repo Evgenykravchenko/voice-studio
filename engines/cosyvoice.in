@@ -1,0 +1,6 @@
+mlx-audio-plus[tts]==0.1.8
+mlx-audio==0.2.9
+
+webrtcvad @ file:engines/wheels/webrtcvad-2.0.10+voicestudio.1-cp311-cp311-macosx_14_0_arm64.whl
+
+fugashi==1.5.2

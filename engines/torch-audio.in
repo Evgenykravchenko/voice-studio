@@ -1,0 +1,20 @@
+coqui-tts[ja]==0.28.0
+torch==2.8.0
+torchaudio==2.8.0
+transformers==4.57.1
+soundfile==0.13.1
+sentencepiece>=0.2.0
+omegaconf==2.3.0
+hydra-core>=1.3.2
+librosa==0.11.0
+pandas>=2.2.0
+resampy>=0.4.3
+rich>=13.7
+tabulate>=0.9
+
+# XTTS native language-aware sentence splitting.
+spacy[ja]==3.8.7
+# spaCy imports Click directly; current Typer no longer depends on it.
+click==8.1.8
+# XTTS Chinese text frontend.
+pypinyin==0.55.0

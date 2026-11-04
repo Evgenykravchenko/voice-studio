@@ -1,0 +1,39 @@
+{
+  "platform": "macOS ARM64",
+  "deploymentTarget": "14.0",
+  "sourceDateEpoch": "1704067200",
+  "buildConstraintsSha256": "9dfd06879a8753d8b969deb132b5bdc267b146f4feb03f6798f91d529ba83747",
+  "wheels": [
+    {
+      "name": "mojimoji",
+      "version": "0.0.13",
+      "file": "mojimoji-0.0.13-cp313-cp313-macosx_14_0_arm64.whl",
+      "sha256": "5c6dd4fafb63fe4be8785448fb2db8f8dd79ce04e693271e3bf27508ccd70486",
+      "sourceSha256": "0e6d2fba22cc8bf132a5bdf3a964296d9287a618d09681a12868f0fd518e4230",
+      "size": 36319
+    },
+    {
+      "name": "pyopenjtalk",
+      "version": "0.4.1",
+      "file": "pyopenjtalk-0.4.1-cp313-cp313-macosx_14_0_arm64.whl",
+      "sha256": "4426410f00f8b9f561b001242a49f71c6306f0e3d4fba0fdb4c83558aab8156b",
+      "sourceSha256": "d5ada46f7fc2b52c1c79c273eb9668ff6ad7ab276a8db9d8be119ef93440f0dc",
+      "size": 1116284
+    },
+    {
+      "name": "webrtcvad",
+      "version": "2.0.10+voicestudio.1",
+      "upstreamVersion": "2.0.10",
+      "python": "3.11",
+      "file": "webrtcvad-2.0.10+voicestudio.1-cp311-cp311-macosx_14_0_arm64.whl",
+      "sha256": "3079be4a95d4935c75fe4ab439c6a775dcf4aea8d9621a9134c8349a3b8d5357",
+      "sourceSha256": "f1bed2fb25b63fb7b1a55d64090c993c9c9167b28485ae0bcdd81cf6ede96aea",
+      "patchSha256": "4001e12fc01127899c56d8ca37b5ba31f4e7e13f0e28fe8f26e6713e3b23d44a",
+      "size": 29526
+    }
+  ],
+  "pythonVersions": [
+    "3.11",
+    "3.13"
+  ]
+}

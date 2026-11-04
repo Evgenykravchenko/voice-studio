@@ -1,0 +1,38 @@
+[
+  {
+    "package": "@fontsource/inter",
+    "version": "5.3.0",
+    "notice": "Inter-OFL-1.1.txt",
+    "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345"
+  },
+  {
+    "package": "react",
+    "version": "19.2.0",
+    "notice": "React-MIT.txt",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+  },
+  {
+    "package": "react-dom",
+    "version": "19.2.0",
+    "notice": "React-DOM-MIT.txt",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+  },
+  {
+    "package": "scheduler",
+    "version": "0.27.0",
+    "notice": "Scheduler-MIT.txt",
+    "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+  },
+  {
+    "package": "@phosphor-icons/react",
+    "version": "2.1.10",
+    "notice": "Phosphor-MIT.txt",
+    "sha256": "6918b72504641180600cbbd4a86b0dfa9dfccf788775694325b71b9a029f6eb4"
+  },
+  {
+    "package": "vite",
+    "version": "6.4.2",
+    "notice": "Vite-LICENSE.md",
+    "sha256": "c6bfec08b0e78a198c5ec0c579e699d2843fd1bf81243f648620731d03f43593"
+  }
+]

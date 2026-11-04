@@ -1,0 +1,3 @@
+export interface EnhancementSettings {noiseReduction?:number|null;strength:number;clarity:number;warmth:number;deEss:number;leveling:boolean;protectPeaks:boolean}
+export const DEFAULT_ENHANCEMENT:EnhancementSettings={noiseReduction:100,strength:30,clarity:20,warmth:0,deEss:35,leveling:true,protectPeaks:true};
+export const sameEnhancement=(a:EnhancementSettings,b:EnhancementSettings)=>Object.keys(DEFAULT_ENHANCEMENT).every(key=>(a[key as keyof EnhancementSettings]??DEFAULT_ENHANCEMENT[key as keyof EnhancementSettings])===(b[key as keyof EnhancementSettings]??DEFAULT_ENHANCEMENT[key as keyof EnhancementSettings]));

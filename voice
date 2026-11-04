@@ -1,0 +1,26 @@
+#!/bin/zsh
+set -euo pipefail
+
+PROJECT_DIR="${0:A:h}"
+export UV_PYTHON_INSTALL_DIR="$PROJECT_DIR/.runtime/python"
+export UV_CACHE_DIR="$PROJECT_DIR/.runtime/uv-cache"
+export UV_TOOL_DIR="$PROJECT_DIR/.runtime/uv-tools"
+export XDG_CACHE_HOME="$PROJECT_DIR/.runtime/cache"
+export HF_HOME="$PROJECT_DIR/.runtime/cache/huggingface"
+export HUGGINGFACE_HUB_CACHE="$HF_HOME/hub"
+export HF_XET_HIGH_PERFORMANCE=1
+export TORCH_HOME="$PROJECT_DIR/.runtime/cache/torch"
+export MPLCONFIGDIR="$PROJECT_DIR/.runtime/cache/matplotlib"
+export PYTHONPYCACHEPREFIX="$PROJECT_DIR/.runtime/pycache"
+export PYTHONPATH="$PROJECT_DIR/src:$PROJECT_DIR/vendor"
+export PATH="$PROJECT_DIR/.runtime/bin:$PATH"
+
+PYTHON="$PROJECT_DIR/.venv/bin/python"
+if [[ ! -x "$PYTHON" ]]; then
+  print -u2 "Проект ещё не установлен. Сначала запустите: ./scripts/bootstrap.sh"
+  exit 1
+fi
+
+cd "$PROJECT_DIR"
+exec "$PYTHON" -m voice_cloner.cli "$@"
+

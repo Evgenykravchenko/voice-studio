@@ -1,0 +1,55 @@
+.runtime/
+.venv/
+node_modules/
+.pnpm-store/
+.vite/
+dist/
+target/
+data/
+outputs/
+
+# Local recordings, generated audio and model weights belong on the user's device.
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.opus
+*.aif
+*.aiff
+*.caf
+*.webm
+*.safetensors
+*.gguf
+*.onnx
+*.pth
+*.pt
+*.ckpt
+*.bin
+
+# Local credentials and database/log files must never become publication candidates.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local design evidence may contain personal recordings and profile names.
+/design/
+/design-qa.md
+/.hallmark/
+# Generated from local recordings by scripts/prepare-ui-audio.py.
+/frontend/src/audio-data.json

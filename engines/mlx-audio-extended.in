@@ -1,0 +1,20 @@
+mlx-audio==0.6.3
+soundfile==0.13.1
+misaki[en]>=0.9.4
+espeakng-loader>=0.2.4
+pyloudnorm>=0.1.1
+librosa==0.11.0
+einops>=0.8.1
+omegaconf==2.3.0
+sentencepiece>=0.2.0
+loguru>=0.7.3
+misaki[ja,zh]>=0.9.4
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+mojimoji @ file:engines/wheels/mojimoji-0.0.13-cp313-cp313-macosx_14_0_arm64.whl
+
+pyopenjtalk @ file:engines/wheels/pyopenjtalk-0.4.1-cp313-cp313-macosx_14_0_arm64.whl
+
+# Offline alignment of long Dia references; no generated replacement transcript.
+mlx-whisper==0.4.3
+tiktoken==0.14.0

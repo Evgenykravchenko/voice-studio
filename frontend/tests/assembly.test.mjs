@@ -1,0 +1,13 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';
+import {arrangement,setClipEdit,clipEdit,audioSignature,audioSnapshot,restoreAudio} from '../src/assembly-utils.ts';
+import {isProject} from '../src/state.ts';
+const take='11111111-1111-1111-1111-111111111111';
+const scene=(id,audioIndex)=>({id,title:id,text:'Exact text',audioIndex,speechLanguage:'ru',emotion:'calm',temperature:.8,seed:''});
+const recordings=[0,1,2].map(i=>({id:`demo-${i}`,duration:10+i,url:'x',peaks:[.2,.4],generated:false}));
+const project=()=>({title:'Test',scenes:[scene('a',0),scene('b',1),scene('c',2)]});
+test('montage uses remembered per-take cuts, excludes scenes and omits the final pause',()=>{let p=project();p=setClipEdit(p,'a','demo-0',{start:1,end:4});p.scenes[1].assembly={excluded:true};p.mix={gapSeconds:.5};const items=arrangement(p,recordings);assert.equal(items[0].duration,3);assert.equal(items[2].start,3.5);assert.equal(items[2].gap,0);assert.equal(items[2].end,15.5);assert.equal(p.scenes[0].text,'Exact text');p.scenes[0].selectedTakeId=take;assert.equal(clipEdit(p.scenes[0],{id:take,duration:5}).end,5);delete p.scenes[0].selectedTakeId;assert.equal(clipEdit(p.scenes[0],recordings[0]).end,4);});
+test('script edits keep the master valid, audio edits invalidate it',()=>{const p=project(),signature=audioSignature(p);p.scenes[0].text='New script';p.title='New title';assert.equal(audioSignature(p),signature);p.scenes[0].assembly={pauseAfter:.8};assert.notEqual(audioSignature(p),signature);});
+test('audio undo keeps new scripts, take links and new scenes intact',()=>{const p=project(),snapshot=audioSnapshot(p);p.scenes.reverse();p.scenes[0].text='Manual edit';p.scenes[0].takeIds=[take];p.scenes.push(scene('d',null));const restored=restoreAudio(p,snapshot);assert.deepEqual(restored.scenes.map(s=>s.id),['a','b','c','d']);assert.equal(restored.scenes[2].text,'Manual edit');assert.deepEqual(restored.scenes[2].takeIds,[take]);});
+test('project import validates montage values and keeps legacy projects valid',()=>{const p=project();assert.equal(isProject(p),true);p.mix={gapSeconds:Infinity};assert.equal(isProject(p),false);p.mix={gapSeconds:.25};p.scenes[0].assembly={edits:{'demo-0':{start:4,end:2}}};assert.equal(isProject(p),false);p.scenes[0].assembly={edits:{'demo-0':{start:.2,end:2,gainDb:-2}}};assert.equal(isProject(p),true);});
+
+test('voice source mode survives project JSON and rejects unsupported values',()=>{const p=project();p.scenes[0].voiceMode='design';p.scenes[0].voiceDescription='Calm voice';assert.equal(isProject(JSON.parse(JSON.stringify(p))),true);p.scenes[0].voiceMode='invented';assert.equal(isProject(p),false);});

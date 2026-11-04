@@ -1,0 +1,4781 @@
+[
+  {
+    "repo": "appautomaton/fishaudio-s2-pro-8bit-mlx",
+    "revision": "520af75a48816821e59fce7f6b7a85deb49e7f1c",
+    "files": [
+      {
+        "path": "codec-mlx/config.json",
+        "size": 146,
+        "sha256": null
+      },
+      {
+        "path": "codec-mlx/model.safetensors",
+        "size": 1874070622,
+        "sha256": "543445a2ebc5224d2af5956d422f88c2cd21f4018c1a26d81b51ec231bb630f2"
+      },
+      {
+        "path": "config.json",
+        "size": 1077,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 4847255597,
+        "sha256": "98cc58881489808dbe46e2def8dc2a34ccd03352f19aa33785b45f60a39685e2"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 101864,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 12217872,
+        "sha256": "f24e08099d45a8adf3f52f5f0b03276e433bb9d689bb15fcbcc48ce58744588b"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 860832,
+        "sha256": null
+      }
+    ],
+    "id": "fish-s2-pro",
+    "name": "Fish S2 Pro",
+    "task": "synthesis",
+    "format": "MLX INT8",
+    "description": {
+      "ru": "Клонирование по образцу, эмоции и выразительная озвучка текста.",
+      "en": "Reference voice cloning, emotion tags and expressive speech generation."
+    },
+    "license": "Fish Audio Research License",
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "sizeBytes": 6734508010,
+    "features": [
+      "cloning",
+      "emotion"
+    ],
+    "integration": "ready",
+    "runtime": "mlx-speech",
+    "downloadable": true,
+    "gated": false,
+    "sourceUrl": "https://huggingface.co/appautomaton/fishaudio-s2-pro-8bit-mlx",
+    "verifiedOn": "2026-10-29",
+    "synthesisMode": "clone",
+    "adapter": "fish",
+    "markup": "fish",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true
+  },
+  {
+    "id": "qwen3-base-1-7b",
+    "name": "Qwen3-TTS 1.7B Base",
+    "repo": "mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit",
+    "revision": "37e955a1deb861c088ae5f3a67043185f3d1a60c",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 5522,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 245,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671839,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 1649238423,
+        "sha256": "ac973aa38ec79d4b4b52bf858948f0d47dd909aa4bcd383f5b900e277410fdb5"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 78070,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 127,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/config.json",
+        "size": 2336,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/configuration.json",
+        "size": 76,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/model.safetensors",
+        "size": 682293092,
+        "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+      },
+      {
+        "path": "speech_tokenizer/preprocessor_config.json",
+        "size": 234,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 7344,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 2336074141,
+    "task": "synthesis",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Клонирование голоса по записи; русский и ещё девять языков.",
+      "en": "Reference voice cloning in Russian and nine other languages."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "de",
+      "fr",
+      "ru",
+      "pt",
+      "es",
+      "it"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-4bit",
+    "verifiedOn": "2026-10-29",
+    "synthesisMode": "clone",
+    "adapter": "qwen",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true
+  },
+  {
+    "id": "qwen3-base-0-6b",
+    "name": "Qwen3-TTS 0.6B Base",
+    "repo": "mlx-community/Qwen3-TTS-12Hz-0.6B-Base-4bit",
+    "revision": "0d6bb6fe33f92d47a507e23b9148940e8366ab5b",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 5522,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 245,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671839,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 1024490700,
+        "sha256": "07dcb37b323614af64624af687876edd5c9a8b442da2a7b549d62f9ba2770ec1"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 77731,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 127,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/config.json",
+        "size": 2336,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/configuration.json",
+        "size": 76,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/model.safetensors",
+        "size": 682293092,
+        "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+      },
+      {
+        "path": "speech_tokenizer/preprocessor_config.json",
+        "size": 234,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 7344,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 335,
+        "sha256": null,
+        "repo": "mlx-community/whisper-base-mlx-q4",
+        "revision": "780e14bdcd73371c3bb45f86aa038325aa42beb0"
+      },
+      {
+        "path": "weights.npz",
+        "size": 80473740,
+        "sha256": "de610861d15452d1219382c65f1020337249f0a23724542870b33a1ae98e21ee",
+        "repo": "mlx-community/whisper-base-mlx-q4",
+        "revision": "780e14bdcd73371c3bb45f86aa038325aa42beb0"
+      }
+    ],
+    "sizeBytes": 1791800154,
+    "task": "synthesis",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Клонирование голоса по записи; русский и ещё девять языков.",
+      "en": "Reference voice cloning in Russian and nine other languages."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "de",
+      "fr",
+      "ru",
+      "pt",
+      "es",
+      "it"
+    ],
+    "license": "apache-2.0; Whisper alignment: MIT",
+    "integration": "ready",
+    "runtime": "mlx-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-Base-4bit",
+    "verifiedOn": "2026-10-29",
+    "synthesisMode": "clone",
+    "adapter": "qwen",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true,
+    "alignmentRepo": "mlx-community/whisper-base-mlx-q4",
+    "notes": {
+      "ru": "Из длинного образца автоматически готовится фрагмент до 10 секунд с соответствующей частью исходной расшифровки. В комплект входит локальное выравнивание Whisper Base Q4 (около 80 МБ).",
+      "en": "Long references are automatically prepared as excerpts up to 10 seconds with their matching original transcript. Includes local Whisper Base Q4 alignment (about 80 MB)."
+    }
+  },
+  {
+    "id": "qwen3-base-0-6b-bf16",
+    "name": "Qwen3-TTS 0.6B Base BF16",
+    "repo": "mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16",
+    "revision": "1eccf1cb2519b5a4e8a95b5f0544f3303568164f",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 5317,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 245,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671839,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 1829344448,
+        "sha256": "d7c7ed3e3464e3e59de0f955b3755891fa8319ff061c3f0307fe2e1343bc122d"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 38573,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 127,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/config.json",
+        "size": 2336,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/configuration.json",
+        "size": 76,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/model.safetensors",
+        "size": 682293092,
+        "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+      },
+      {
+        "path": "speech_tokenizer/preprocessor_config.json",
+        "size": 234,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 7344,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 2516140464,
+    "task": "synthesis",
+    "format": "MLX BF16",
+    "description": {
+      "ru": "Клонирование голоса по записи; русский и ещё девять языков.",
+      "en": "Reference voice cloning in Russian and nine other languages."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "de",
+      "fr",
+      "ru",
+      "pt",
+      "es",
+      "it"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16",
+    "verifiedOn": "2026-10-29",
+    "synthesisMode": "clone",
+    "adapter": "qwen",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true
+  },
+  {
+    "id": "qwen3-customvoice",
+    "name": "Qwen3-TTS CustomVoice",
+    "repo": "mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-4bit",
+    "revision": "f35faf19b0cc2160865af64ecf0f22f83d335135",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 6058,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 245,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671839,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 1625226859,
+        "sha256": "45a5b5ccd3cc473b9d3890ea922937036b56b948e8bd8c678e725329abdd1d00"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 71786,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 127,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/config.json",
+        "size": 2336,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/configuration.json",
+        "size": 76,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/model.safetensors",
+        "size": 682293092,
+        "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+      },
+      {
+        "path": "speech_tokenizer/preprocessor_config.json",
+        "size": 234,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 7344,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 2312056829,
+    "task": "synthesis",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Готовые дикторские голоса и управление подачей текстовой инструкцией.",
+      "en": "Preset speakers and delivery control through text instructions."
+    },
+    "features": [
+      "presets",
+      "emotion"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "de",
+      "fr",
+      "ru",
+      "pt",
+      "es",
+      "it"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-CustomVoice-4bit",
+    "verifiedOn": "2026-10-29",
+    "synthesisMode": "preset",
+    "presetVoices": [
+      "Vivian",
+      "Serena",
+      "Uncle_Fu",
+      "Dylan",
+      "Eric",
+      "Ryan",
+      "Aiden",
+      "Ono_Anna",
+      "Sohee"
+    ],
+    "adapter": "qwen",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true
+  },
+  {
+    "id": "qwen3-voicedesign",
+    "name": "Qwen3-TTS VoiceDesign",
+    "repo": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit",
+    "revision": "5c390979e4b93af5f2932f90742ca99c7dd04687",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 5437,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 245,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671839,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 1625226859,
+        "sha256": "d8627de7ef411f6775182925059e140a9e1edb1fde8feeb540b4fba0edee1e58"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 71786,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 127,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/config.json",
+        "size": 2336,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/configuration.json",
+        "size": 76,
+        "sha256": null
+      },
+      {
+        "path": "speech_tokenizer/model.safetensors",
+        "size": 682293092,
+        "sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258"
+      },
+      {
+        "path": "speech_tokenizer/preprocessor_config.json",
+        "size": 234,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 7344,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 2312056208,
+    "task": "synthesis",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Создание нового голоса по описанию тембра и манеры речи.",
+      "en": "Create a new voice from a description of timbre and delivery."
+    },
+    "features": [
+      "design"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "de",
+      "fr",
+      "ru",
+      "pt",
+      "es",
+      "it"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit",
+    "verifiedOn": "2026-10-29",
+    "synthesisMode": "design",
+    "adapter": "qwen",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true
+  },
+  {
+    "id": "chatterbox-v3",
+    "name": "Chatterbox Multilingual V3",
+    "repo": "mlx-community/chatterbox-multilingual-v3",
+    "revision": "03565773edd72e949572557597af8063bb49a18a",
+    "files": [
+      {
+        "path": "Cangjie5_TC.json",
+        "size": 1920163,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 666,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 2711113780,
+        "sha256": "e702f2c441e040bd360e59a86c85d462539759d665e41cfd1938adadd74187a3"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 69989,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 126,
+        "sha256": null,
+        "repo": "mlx-community/S3TokenizerV2",
+        "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 494868984,
+        "sha256": "928726bc1f206a613d36b8f49e297eae9c5593a21bf9b92ddfe2c23f85eb92cc",
+        "repo": "mlx-community/S3TokenizerV2",
+        "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec"
+      },
+      {
+        "path": "resources/unidic-3.1.0.zip",
+        "url": "https://cotonoha-dic.s3-ap-northeast-1.amazonaws.com/unidic-3.1.0.zip",
+        "size": 525943040,
+        "sha256": "638718c4c63625ab300de4c92c67925d54c0e9e3830009eaa992f29819d59c43",
+        "resource": "unidic"
+      }
+    ],
+    "sizeBytes": 3733916748,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Многоязычное клонирование, русский язык и регулировка выразительности.",
+      "en": "Multilingual voice cloning, Russian support and expression controls."
+    },
+    "features": [
+      "cloning",
+      "emotion"
+    ],
+    "languages": [
+      "ar",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "it",
+      "ja",
+      "ko",
+      "ms",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ru",
+      "sv",
+      "sw",
+      "tr",
+      "zh"
+    ],
+    "license": "mit; UniDic: BSD, LGPL or GPL (bundled licenses)",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/chatterbox-multilingual-v3",
+    "verifiedOn": "2026-10-29",
+    "adapter": "chatterbox",
+    "synthesisMode": "clone",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true,
+    "autoLanguage": false,
+    "resourceBytes": 811662835,
+    "notes": {
+      "ru": "Японские чтения подготавливаются локально. В комплект входит UniDic 3.1; после распаковки нужно ещё около 812 МБ на диске.",
+      "en": "Japanese readings are prepared locally. Includes UniDic 3.1; unpacking needs about 812 MB of additional disk space."
+    }
+  },
+  {
+    "id": "chatterbox-turbo",
+    "name": "Chatterbox Turbo",
+    "repo": "mlx-community/chatterbox-turbo-4bit",
+    "revision": "c63817725071d7b5269c7b558772d6e8cbf59cec",
+    "files": [
+      {
+        "path": "added_tokens.json",
+        "size": 418,
+        "sha256": null
+      },
+      {
+        "path": "conds.safetensors",
+        "size": 164884,
+        "sha256": "df9ad2c54848027d94cf01f9fc0ed22bc5d3165df6e6a85c903c1124b8a78a4a"
+      },
+      {
+        "path": "config.json",
+        "size": 2565,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 456318,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 414992166,
+        "sha256": "59603c7f62272b72d4b1d7870e0bf546b5f88561a367daf6fd6282da997a54a4"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 252012,
+        "sha256": null
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 470,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 3878,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 999186,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 126,
+        "sha256": null,
+        "repo": "mlx-community/S3TokenizerV2",
+        "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 494868984,
+        "sha256": "928726bc1f206a613d36b8f49e297eae9c5593a21bf9b92ddfe2c23f85eb92cc",
+        "repo": "mlx-community/S3TokenizerV2",
+        "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec"
+      }
+    ],
+    "sizeBytes": 911741007,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Английская речь с клонированием, смехом и другими неречевыми тегами.",
+      "en": "English voice cloning with laughter and other paralinguistic tags."
+    },
+    "features": [
+      "cloning",
+      "emotion"
+    ],
+    "languages": [
+      "en"
+    ],
+    "license": "mit",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/chatterbox-turbo-4bit",
+    "verifiedOn": "2026-10-29",
+    "adapter": "chatterbox-turbo",
+    "synthesisMode": "clone",
+    "markup": "chatterbox",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true
+  },
+  {
+    "id": "cosyvoice3",
+    "name": "CosyVoice 3",
+    "repo": "mlx-community/Fun-CosyVoice3-0.5B-2512-4bit",
+    "revision": "55a6713d54751f1ec2645aa11294676f2067202a",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1505,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 1218070250,
+        "sha256": "7e11533eb3a8edf42464e3502f7a973da62d56e1d6b55b6de28dea8d1e7cd44a"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 10523354,
+        "sha256": "5e3855f008ece7e02f09bad5c0aa492cd1594529a796b80193f4ef640200e58b"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 973,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 174,
+        "sha256": null,
+        "repo": "mlx-community/S3TokenizerV3",
+        "revision": "b143914b3e912278104824da706edc9c2d317c4e"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 968059321,
+        "sha256": "ee05a65d4472f089d55b5dfcd9e19f42e3245f4f19d612b90c04cb051a80105e",
+        "repo": "mlx-community/S3TokenizerV3",
+        "revision": "b143914b3e912278104824da706edc9c2d317c4e"
+      },
+      {
+        "path": "resources/unidic-3.1.0.zip",
+        "url": "https://cotonoha-dic.s3-ap-northeast-1.amazonaws.com/unidic-3.1.0.zip",
+        "size": 525943040,
+        "sha256": "638718c4c63625ab300de4c92c67925d54c0e9e3830009eaa992f29819d59c43",
+        "resource": "unidic"
+      }
+    ],
+    "sizeBytes": 2722598617,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Клонирование на русском и других языках, потоковая речь и инструкции подачи.",
+      "en": "Russian and multilingual cloning, streaming speech and delivery instructions."
+    },
+    "features": [
+      "cloning",
+      "emotion",
+      "streaming"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "fr",
+      "es",
+      "ja",
+      "ko",
+      "it",
+      "ru",
+      "de"
+    ],
+    "license": "apache-2.0; UniDic: BSD, LGPL or GPL (bundled licenses)",
+    "integration": "ready",
+    "runtime": "cosyvoice",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Fun-CosyVoice3-0.5B-2512-4bit",
+    "verifiedOn": "2026-10-29",
+    "notes": {
+      "ru": "Японские чтения подготавливаются локально. В комплект входит UniDic 3.1; после распаковки нужно ещё около 812 МБ на диске.",
+      "en": "Japanese readings are prepared locally. Includes UniDic 3.1; unpacking needs about 812 MB of additional disk space."
+    },
+    "adapter": "cosyvoice",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "resourceBytes": 811662835
+  },
+  {
+    "id": "voxcpm2",
+    "name": "VoxCPM2",
+    "repo": "mlx-community/VoxCPM2-4bit",
+    "revision": "dc9e5c187858da5f4a13dc4c247e297339216381",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 5332,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 2297215329,
+        "sha256": "25bddc99a7cc6d28214f12dd676ed0afa9b0a805d6477f85c275bb113cb8acee"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 1632,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 3676772,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 4952,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 2300904017,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Клонирование и голос по описанию на 30 языках, включая русский.",
+      "en": "Voice cloning and voice design across 30 languages, including Russian."
+    },
+    "features": [
+      "cloning",
+      "design",
+      "emotion",
+      "streaming"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "ar",
+      "my",
+      "da",
+      "nl",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "he",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "km",
+      "ko",
+      "lo",
+      "ms",
+      "no",
+      "pl",
+      "pt",
+      "ru",
+      "es",
+      "sw",
+      "sv",
+      "tl",
+      "th",
+      "tr",
+      "vi"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/VoxCPM2-4bit",
+    "verifiedOn": "2026-10-29",
+    "adapter": "voxcpm2",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "synthesisModes": [
+      "clone",
+      "design"
+    ],
+    "languageMode": "text"
+  },
+  {
+    "id": "omnivoice",
+    "name": "OmniVoice",
+    "repo": "mlx-community/OmniVoice-4bit",
+    "revision": "e568702be8aa470656cbaa27e33281b3e272b729",
+    "files": [
+      {
+        "path": "audio_tokenizer/.gitattributes",
+        "size": 1519,
+        "sha256": null
+      },
+      {
+        "path": "audio_tokenizer/LICENSE",
+        "size": 9171,
+        "sha256": null
+      },
+      {
+        "path": "audio_tokenizer/config.json",
+        "size": 2531,
+        "sha256": null
+      },
+      {
+        "path": "audio_tokenizer/model.safetensors",
+        "size": 805665628,
+        "sha256": "fe7c5e8785e0a05833e1bfc3e002ec7f55af21e306b2e7154a448c1f54ccfb0d"
+      },
+      {
+        "path": "audio_tokenizer/preprocessor_config.json",
+        "size": 206,
+        "sha256": null
+      },
+      {
+        "path": "chat_template.jinja",
+        "size": 4168,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 2238,
+        "sha256": null
+      },
+      {
+        "path": "mlx_manifest.json",
+        "size": 32666,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 325584648,
+        "sha256": "36ff0344d5e890a63ed087a5834fd436e71bf6a7a127d7a8a48b9364227d109d"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 34563,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 11423986,
+        "sha256": "408f669b7e2b045fdf54201d815bd364e6667dbd845115da81239c40bc6dcfd1"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 533,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 1142761857,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Многоязычное клонирование и создание голоса; русский входит в языки модели.",
+      "en": "Multilingual cloning and voice design, with Russian among the model languages."
+    },
+    "features": [
+      "cloning",
+      "design"
+    ],
+    "languages": [
+      "aae",
+      "aal",
+      "aao",
+      "ab",
+      "abb",
+      "abn",
+      "abr",
+      "abs",
+      "abv",
+      "acm",
+      "acw",
+      "acx",
+      "adf",
+      "adx",
+      "ady",
+      "aeb",
+      "aec",
+      "af",
+      "afb",
+      "afo",
+      "ahl",
+      "ahs",
+      "ajg",
+      "aju",
+      "ala",
+      "aln",
+      "alo",
+      "am",
+      "amu",
+      "an",
+      "anc",
+      "ank",
+      "anp",
+      "anw",
+      "aom",
+      "apc",
+      "apd",
+      "arb",
+      "arq",
+      "ars",
+      "ary",
+      "arz",
+      "as",
+      "ast",
+      "avl",
+      "awo",
+      "ayl",
+      "ayp",
+      "az",
+      "ba",
+      "bag",
+      "bas",
+      "bax",
+      "bba",
+      "bbj",
+      "bbl",
+      "bbu",
+      "bce",
+      "bci",
+      "bcs",
+      "bcy",
+      "bda",
+      "bde",
+      "bdm",
+      "be",
+      "beb",
+      "bew",
+      "bfd",
+      "bft",
+      "bg",
+      "bgp",
+      "bhb",
+      "bhh",
+      "bho",
+      "bhp",
+      "bhr",
+      "bjj",
+      "bjk",
+      "bjn",
+      "bjt",
+      "bkh",
+      "bkm",
+      "bky",
+      "bmm",
+      "bmq",
+      "bn",
+      "bnm",
+      "bnn",
+      "bns",
+      "bo",
+      "bou",
+      "bqg",
+      "br",
+      "bra",
+      "brh",
+      "bri",
+      "brx",
+      "bs",
+      "bsh",
+      "bsj",
+      "bsk",
+      "btm",
+      "btv",
+      "bug",
+      "bum",
+      "buo",
+      "bux",
+      "bwr",
+      "bxf",
+      "byc",
+      "bys",
+      "byv",
+      "byx",
+      "bzc",
+      "bzw",
+      "ca",
+      "ccg",
+      "ceb",
+      "cen",
+      "cfa",
+      "cgg",
+      "chq",
+      "cjk",
+      "ckb",
+      "ckl",
+      "ckr",
+      "cky",
+      "cnh",
+      "cpy",
+      "cs",
+      "cte",
+      "ctl",
+      "cut",
+      "cux",
+      "cv",
+      "cy",
+      "da",
+      "dag",
+      "dar",
+      "dav",
+      "dbd",
+      "dcc",
+      "de",
+      "deg",
+      "dgh",
+      "dgo",
+      "dje",
+      "dmk",
+      "dml",
+      "dru",
+      "dty",
+      "dua",
+      "dv",
+      "dyu",
+      "dzg",
+      "ebr",
+      "ebu",
+      "ego",
+      "eiv",
+      "eko",
+      "ekr",
+      "el",
+      "elm",
+      "en",
+      "eo",
+      "es",
+      "esu",
+      "et",
+      "eto",
+      "ets",
+      "etu",
+      "eu",
+      "ewo",
+      "ext",
+      "eyo",
+      "fa",
+      "fan",
+      "fat",
+      "ff",
+      "ffm",
+      "fi",
+      "fia",
+      "fil",
+      "fip",
+      "fkk",
+      "fmp",
+      "fr",
+      "fub",
+      "fuc",
+      "fue",
+      "fuf",
+      "fuh",
+      "fui",
+      "fuq",
+      "fuv",
+      "fy",
+      "ga",
+      "gbm",
+      "gbr",
+      "gby",
+      "gcc",
+      "gdf",
+      "gej",
+      "ges",
+      "ggg",
+      "gid",
+      "gig",
+      "giz",
+      "gjk",
+      "gju",
+      "gl",
+      "glw",
+      "gn",
+      "gol",
+      "gom",
+      "gsl",
+      "gu",
+      "gui",
+      "gur",
+      "guz",
+      "gv",
+      "gwc",
+      "gwe",
+      "gwt",
+      "gya",
+      "gyz",
+      "ha",
+      "hah",
+      "hao",
+      "haw",
+      "haz",
+      "hbb",
+      "he",
+      "hem",
+      "hi",
+      "hia",
+      "hkk",
+      "hla",
+      "hno",
+      "hoj",
+      "hr",
+      "hsb",
+      "ht",
+      "hu",
+      "hue",
+      "hul",
+      "hux",
+      "hwo",
+      "hy",
+      "hz",
+      "ia",
+      "ibb",
+      "id",
+      "ida",
+      "idu",
+      "ig",
+      "ijc",
+      "ijn",
+      "ik",
+      "ikw",
+      "is",
+      "ish",
+      "iso",
+      "it",
+      "its",
+      "itw",
+      "itz",
+      "ja",
+      "jal",
+      "jax",
+      "jgo",
+      "jmx",
+      "jns",
+      "jqr",
+      "juk",
+      "juo",
+      "jv",
+      "ka",
+      "kab",
+      "kai",
+      "kaj",
+      "kam",
+      "kbd",
+      "kbl",
+      "kbt",
+      "kcq",
+      "kdh",
+      "kea",
+      "keu",
+      "kfe",
+      "kfk",
+      "kfp",
+      "khg",
+      "khw",
+      "kj",
+      "kjc",
+      "kjk",
+      "kk",
+      "kln",
+      "kls",
+      "km",
+      "kmr",
+      "kmy",
+      "kn",
+      "kna",
+      "knn",
+      "ko",
+      "kol",
+      "koo",
+      "kpo",
+      "kqo",
+      "ks",
+      "ksd",
+      "ksf",
+      "kto",
+      "kuh",
+      "kvx",
+      "kw",
+      "kwm",
+      "kxp",
+      "ky",
+      "kyx",
+      "lag",
+      "lb",
+      "lcm",
+      "ldb",
+      "lg",
+      "lij",
+      "lir",
+      "lkb",
+      "lla",
+      "ln",
+      "lnu",
+      "lo",
+      "loa",
+      "lrk",
+      "lss",
+      "lt",
+      "ltg",
+      "lto",
+      "lua",
+      "luo",
+      "lus",
+      "lv",
+      "lwg",
+      "mab",
+      "maf",
+      "mai",
+      "mau",
+      "max",
+      "mbo",
+      "mcf",
+      "mcn",
+      "mcx",
+      "mdd",
+      "mde",
+      "mdf",
+      "mek",
+      "mer",
+      "meu",
+      "mfm",
+      "mfn",
+      "mfo",
+      "mfv",
+      "mgg",
+      "mgi",
+      "mhk",
+      "mhr",
+      "mi",
+      "mig",
+      "miu",
+      "mk",
+      "mkf",
+      "mki",
+      "ml",
+      "mlq",
+      "mn",
+      "mne",
+      "mni",
+      "mqy",
+      "mr",
+      "mrj",
+      "mrr",
+      "mrt",
+      "ms",
+      "mse",
+      "msh",
+      "msw",
+      "mt",
+      "mtr",
+      "mtu",
+      "mtx",
+      "mua",
+      "mug",
+      "mui",
+      "mve",
+      "mvy",
+      "mxs",
+      "mxu",
+      "mxy",
+      "my",
+      "myv",
+      "mzl",
+      "nal",
+      "nan",
+      "nap",
+      "nb",
+      "nbh",
+      "ncf",
+      "nco",
+      "ncx",
+      "ndi",
+      "ng",
+      "ngi",
+      "nhg",
+      "nhi",
+      "nhn",
+      "nhq",
+      "nja",
+      "nl",
+      "nla",
+      "nlv",
+      "nmg",
+      "nmz",
+      "nn",
+      "nnh",
+      "no",
+      "noe",
+      "npi",
+      "nso",
+      "ny",
+      "nyu",
+      "oc",
+      "odk",
+      "odu",
+      "ogo",
+      "om",
+      "orc",
+      "oru",
+      "ory",
+      "os",
+      "pa",
+      "pbs",
+      "pbt",
+      "pbu",
+      "pcm",
+      "pex",
+      "phl",
+      "phr",
+      "pip",
+      "piy",
+      "pko",
+      "pl",
+      "plk",
+      "plt",
+      "pmq",
+      "pms",
+      "pmy",
+      "pnb",
+      "poc",
+      "poe",
+      "pow",
+      "prq",
+      "ps",
+      "pst",
+      "pt",
+      "pua",
+      "pwn",
+      "qug",
+      "qum",
+      "qup",
+      "qur",
+      "qus",
+      "quv",
+      "qux",
+      "quy",
+      "qva",
+      "qvi",
+      "qvj",
+      "qvl",
+      "qwa",
+      "qws",
+      "qxa",
+      "qxp",
+      "qxt",
+      "qxu",
+      "qxw",
+      "rag",
+      "rm",
+      "ro",
+      "rob",
+      "rof",
+      "roo",
+      "rth",
+      "ru",
+      "rup",
+      "rw",
+      "sa",
+      "sah",
+      "sat",
+      "sau",
+      "say",
+      "sbn",
+      "sc",
+      "scl",
+      "scn",
+      "sd",
+      "sei",
+      "shu",
+      "si",
+      "sip",
+      "siw",
+      "sjr",
+      "sk",
+      "skg",
+      "skr",
+      "sl",
+      "sn",
+      "snc",
+      "snk",
+      "so",
+      "sol",
+      "sps",
+      "sq",
+      "sr",
+      "src",
+      "sro",
+      "ssi",
+      "ste",
+      "sua",
+      "sv",
+      "sva",
+      "sw",
+      "szy",
+      "ta",
+      "tan",
+      "tar",
+      "tay",
+      "tbf",
+      "tcf",
+      "tcy",
+      "tdn",
+      "tdx",
+      "te",
+      "tg",
+      "tgc",
+      "th",
+      "the",
+      "thq",
+      "thr",
+      "thv",
+      "ti",
+      "tig",
+      "tio",
+      "tk",
+      "tkg",
+      "tkt",
+      "tli",
+      "tlp",
+      "tn",
+      "tok",
+      "tpl",
+      "tpz",
+      "tqp",
+      "tr",
+      "trp",
+      "trq",
+      "trv",
+      "trw",
+      "tt",
+      "ttj",
+      "ttr",
+      "ttu",
+      "tui",
+      "tul",
+      "tuq",
+      "tuv",
+      "tuy",
+      "tvo",
+      "tvu",
+      "tw",
+      "twu",
+      "txs",
+      "txy",
+      "udl",
+      "ug",
+      "uk",
+      "uki",
+      "umb",
+      "ur",
+      "ush",
+      "uz",
+      "uzn",
+      "vai",
+      "var",
+      "ver",
+      "vi",
+      "vmc",
+      "vmj",
+      "vmm",
+      "vmp",
+      "vmz",
+      "vot",
+      "vro",
+      "wbl",
+      "wci",
+      "weo",
+      "wes",
+      "wja",
+      "wji",
+      "wo",
+      "wof",
+      "xh",
+      "xhe",
+      "xka",
+      "xmf",
+      "xmv",
+      "xmw",
+      "xpe",
+      "xti",
+      "xtu",
+      "yaq",
+      "yav",
+      "yay",
+      "ydd",
+      "ydg",
+      "yer",
+      "yes",
+      "yi",
+      "yo",
+      "yue",
+      "zga",
+      "zgh",
+      "zh",
+      "zoc",
+      "zoh",
+      "zor",
+      "zpv",
+      "zpy",
+      "ztg",
+      "ztn",
+      "ztp",
+      "zts",
+      "ztu",
+      "zu",
+      "zza"
+    ],
+    "license": "CC-BY-NC (weights) / Apache-2.0 (code)",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/OmniVoice-4bit",
+    "verifiedOn": "2026-10-29",
+    "adapter": "omnivoice",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "synthesisModes": [
+      "clone",
+      "design"
+    ],
+    "voiceDescriptionExample": "female, young adult, low pitch",
+    "voiceDescriptionHelp": {
+      "ru": "Используйте английские атрибуты голоса.",
+      "en": "Use English voice attributes."
+    },
+    "notes": {
+      "ru": "Веса хранятся в INT4 и разворачиваются в FP16 при запуске; оперативной памяти нужно больше размера загрузки.",
+      "en": "Weights are stored as INT4 and decoded to FP16 at load time; RAM exceeds the download size."
+    }
+  },
+  {
+    "id": "moss-tts",
+    "name": "MOSS-TTS",
+    "repo": "mlx-community/MOSS-TTS-8B-8bit",
+    "revision": "b9262754ad5245942472c7b4ff2b53cec3a07ec0",
+    "files": [
+      {
+        "path": "added_tokens.json",
+        "size": 704,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 2853,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671853,
+        "sha256": null
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "size": 5321905753,
+        "sha256": "592c20912e99b4105491298371cc5fe76329e039bc19008160203ab916c919d2"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "size": 5146237999,
+        "sha256": "1676d809981efc7a9ca13d096631d63499d918018c8c4c4fd0bbadfecae59428"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 631,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 11422691,
+        "sha256": "cb3c8fa82993d515469c2800cc455bff4aaa3c4fed9da1f2b0c0668c304f335a"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 5501,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      },
+      {
+        "path": "mlx-int8/config.json",
+        "size": 6686,
+        "sha256": null,
+        "repo": "mlx-community/MOSS-Audio-Tokenizer-MLX-8bit",
+        "revision": "03e8862ad5b0b57aa3a17fe981c05e0befbaae48"
+      },
+      {
+        "path": "mlx-int8/model.safetensors",
+        "size": 2003407408,
+        "sha256": "de45810416fbc67a444e9b1afdbb41569a13669f7942af2f011b26e918767995",
+        "repo": "mlx-community/MOSS-Audio-Tokenizer-MLX-8bit",
+        "revision": "03e8862ad5b0b57aa3a17fe981c05e0befbaae48"
+      }
+    ],
+    "sizeBytes": 12487438912,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Длинная речь и несколько говорящих, клонирование на 20 языках, включая русский.",
+      "en": "Long-form multi-speaker speech and cloning in 20 languages, including Russian."
+    },
+    "features": [
+      "cloning",
+      "dialogue"
+    ],
+    "languages": [
+      "zh",
+      "en",
+      "de",
+      "es",
+      "fr",
+      "ja",
+      "it",
+      "he",
+      "ko",
+      "ru",
+      "fa",
+      "ar",
+      "pl",
+      "pt",
+      "cs",
+      "da",
+      "sv",
+      "hu",
+      "el",
+      "tr"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/MOSS-TTS-8B-8bit",
+    "verifiedOn": "2026-10-29",
+    "adapter": "moss",
+    "synthesisMode": "clone",
+    "codecRepo": "mlx-community/MOSS-Audio-Tokenizer-MLX-8bit",
+    "defaultTemperature": 1.7,
+    "supportsSeed": true,
+    "languageMode": "text",
+    "codecSubdir": "mlx-int8"
+  },
+  {
+    "id": "moss-voicegenerator",
+    "name": "MOSS VoiceGenerator",
+    "repo": "OpenMOSS-Team/MOSS-VoiceGenerator",
+    "revision": "97521ec2b6f3ec5026ac1f5751f8fc302d82c2d4",
+    "files": [
+      {
+        "path": "__init__.py",
+        "size": 0,
+        "sha256": null
+      },
+      {
+        "path": "added_tokens.json",
+        "size": 704,
+        "sha256": null
+      },
+      {
+        "path": "chat_template.jinja",
+        "size": 352,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 2203,
+        "sha256": null
+      },
+      {
+        "path": "configuration_moss_tts.py",
+        "size": 5584,
+        "sha256": null
+      },
+      {
+        "path": "inference_utils.py",
+        "size": 5092,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671853,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 4228278872,
+        "sha256": "dbe345257ff9f6cc84195bed830a268b39d5e0b728ff3ba90e715150a49b16d4"
+      },
+      {
+        "path": "modeling_moss_tts.py",
+        "size": 25329,
+        "sha256": null
+      },
+      {
+        "path": "processing_moss_tts.py",
+        "size": 37220,
+        "sha256": null
+      },
+      {
+        "path": "processor_config.json",
+        "size": 145,
+        "sha256": null
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 631,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 11422691,
+        "sha256": "cb3c8fa82993d515469c2800cc455bff4aaa3c4fed9da1f2b0c0668c304f335a"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 5501,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      },
+      {
+        "path": "__init__.py",
+        "size": 52,
+        "sha256": null,
+        "repo": "OpenMOSS-Team/MOSS-Audio-Tokenizer",
+        "revision": "3cd226ba2947efa357ef453bcad111b6eafba782"
+      },
+      {
+        "path": "config.json",
+        "size": 6601,
+        "sha256": null,
+        "repo": "OpenMOSS-Team/MOSS-Audio-Tokenizer",
+        "revision": "3cd226ba2947efa357ef453bcad111b6eafba782"
+      },
+      {
+        "path": "configuration_moss_audio_tokenizer.py",
+        "size": 12933,
+        "sha256": null,
+        "repo": "OpenMOSS-Team/MOSS-Audio-Tokenizer",
+        "revision": "3cd226ba2947efa357ef453bcad111b6eafba782"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "size": 4998259168,
+        "sha256": "037f441ed30a0ab59f6049de83b824a1b3bd6feb7dbd46c3fbca41fc2f649f28",
+        "repo": "OpenMOSS-Team/MOSS-Audio-Tokenizer",
+        "revision": "3cd226ba2947efa357ef453bcad111b6eafba782"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "size": 2100202560,
+        "sha256": "a187d73d2cda1c2d0676586d9d03c09c0a5813450266af32029c871493fc9582",
+        "repo": "OpenMOSS-Team/MOSS-Audio-Tokenizer",
+        "revision": "3cd226ba2947efa357ef453bcad111b6eafba782"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 148113,
+        "sha256": null,
+        "repo": "OpenMOSS-Team/MOSS-Audio-Tokenizer",
+        "revision": "3cd226ba2947efa357ef453bcad111b6eafba782"
+      },
+      {
+        "path": "modeling_moss_audio_tokenizer.py",
+        "size": 70906,
+        "sha256": null,
+        "repo": "OpenMOSS-Team/MOSS-Audio-Tokenizer",
+        "revision": "3cd226ba2947efa357ef453bcad111b6eafba782"
+      }
+    ],
+    "sizeBytes": 11342933343,
+    "task": "synthesis",
+    "format": "PyTorch",
+    "description": {
+      "ru": "Голос по словесному описанию: тембр, возраст и манера речи.",
+      "en": "Design a voice through descriptions of timbre, age and delivery."
+    },
+    "features": [
+      "design"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "moss",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/OpenMOSS-Team/MOSS-VoiceGenerator",
+    "verifiedOn": "2026-10-29",
+    "adapter": "moss-design",
+    "synthesisMode": "design",
+    "codecRepo": "OpenMOSS-Team/MOSS-Audio-Tokenizer",
+    "defaultTemperature": 1.5,
+    "supportsSeed": true,
+    "languageMode": "text"
+  },
+  {
+    "id": "fireredtts3",
+    "name": "FireRedTTS3 Base",
+    "repo": "appautomaton/fireredtts3-mlx",
+    "revision": "8c6c6490eb70a6d12031026f140369dee6cb9903",
+    "files": [
+      {
+        "path": "base/mlx-bf16/config.json",
+        "size": 2827,
+        "sha256": null
+      },
+      {
+        "path": "base/mlx-bf16/core.safetensors",
+        "size": 4241343356,
+        "sha256": "8f4bdc77907046cd74e687156e951dc6a776d139a0bf2ea7c2bee9dad9cb7c23"
+      },
+      {
+        "path": "base/mlx-bf16/redae.safetensors",
+        "size": 1887612163,
+        "sha256": "a6615e4d3c4d62767aa636ecb5f6b6f9454d693f44e1d1bd46fb43ddc6885c3d"
+      },
+      {
+        "path": "base/mlx-bf16/speaker.safetensors",
+        "size": 14770567,
+        "sha256": "041802be4a49897a9be86570cf9f36b783f975774b57a265215d93c0d7fb99a6"
+      },
+      {
+        "path": "base/mlx-bf16/tokenizer.json",
+        "size": 11422654,
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+      },
+      {
+        "path": "base/mlx-bf16/tokenizer_config.json",
+        "size": 9732,
+        "sha256": null
+      },
+      {
+        "path": "base/mlx-bf16/vocab.json",
+        "size": 2776833,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 6157938132,
+    "task": "synthesis",
+    "format": "MLX BF16",
+    "description": {
+      "ru": "Многоязычное клонирование; русский язык, диалекты и точный текст эталона.",
+      "en": "Multilingual voice cloning with Russian, dialect tags and exact reference text."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "ar",
+      "yue",
+      "zh",
+      "cs",
+      "nl",
+      "en",
+      "fi",
+      "fr",
+      "de",
+      "el",
+      "hi",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "es",
+      "th",
+      "tr",
+      "uk",
+      "vi"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-speech",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/appautomaton/fireredtts3-mlx",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "base/mlx-bf16",
+    "adapter": "firered",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "autoLanguage": false
+  },
+  {
+    "id": "xtts-v2",
+    "name": "XTTS v2",
+    "repo": "coqui/XTTS-v2",
+    "revision": "6c2b0d75eae4b7047358e3b6bd9325f857d43f77",
+    "files": [
+      {
+        "path": "LICENSE.txt",
+        "size": 4014,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 4368,
+        "sha256": null
+      },
+      {
+        "path": "dvae.pth",
+        "size": 210514388,
+        "sha256": "b29bc227d410d4991e0a8c09b858f77415013eeb9fba9650258e96095557d97a"
+      },
+      {
+        "path": "mel_stats.pth",
+        "size": 1067,
+        "sha256": "1f69422a8a8f344c4fca2f0c6b8d41d2151d6615b7321e48e6bb15ae949b119c"
+      },
+      {
+        "path": "model.pth",
+        "size": 1867929118,
+        "sha256": "c7ea20001c6a0a841c77e252d8409f6a74fb423e79b3206a0771ba5989776187"
+      },
+      {
+        "path": "speakers_xtts.pth",
+        "size": 7754818,
+        "sha256": "f0f6137c19a4eab0cbbe4c99b5babacf68b1746e50da90807708c10e645b943b"
+      },
+      {
+        "path": "vocab.json",
+        "size": 361219,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 2086568992,
+    "task": "synthesis",
+    "format": "PyTorch",
+    "description": {
+      "ru": "Кроссязычное клонирование по короткой записи, включая русский язык.",
+      "en": "Cross-language cloning from a short recording, including Russian."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "it",
+      "pt",
+      "pl",
+      "tr",
+      "ru",
+      "nl",
+      "cs",
+      "ar",
+      "zh",
+      "ja",
+      "hu",
+      "ko",
+      "hi"
+    ],
+    "license": "Coqui Public Model License",
+    "integration": "ready",
+    "runtime": "torch-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/coqui/XTTS-v2",
+    "verifiedOn": "2026-10-29",
+    "adapter": "xtts",
+    "synthesisMode": "clone",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true,
+    "autoLanguage": false
+  },
+  {
+    "id": "kokoro",
+    "name": "Kokoro 82M",
+    "repo": "mlx-community/Kokoro-82M-bf16",
+    "revision": "a71e4d38b236d968966a2002c4c895dbd12b1c3c",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 2351,
+        "sha256": null
+      },
+      {
+        "path": "kokoro-v1_0.safetensors",
+        "size": 327115152,
+        "sha256": "4e9ecdf03b8b6cf906070390237feda473dc13327cb8d56a43deaa374c02acd8"
+      },
+      {
+        "path": "voices/af_alloy.safetensors",
+        "size": 522320,
+        "sha256": "5bb848d02ade7e37981809acad52a1761ef7a586ff9f30d02d65fd71c4af95f9"
+      },
+      {
+        "path": "voices/af_aoede.safetensors",
+        "size": 522320,
+        "sha256": "23809148777f2a2378983dd856bc14b9c261018279f916f98c23d86e844409a5"
+      },
+      {
+        "path": "voices/af_bella.safetensors",
+        "size": 522320,
+        "sha256": "112d310468cbb3cf23404d3d0b50ad3adf017b87bf38bf9edd15f4ad572df6a3"
+      },
+      {
+        "path": "voices/af_heart.safetensors",
+        "size": 522320,
+        "sha256": "2c1c733b0e6576c810e268d3e440c21dea4e0f0131a3ba4cfc98d7fe6136d094"
+      },
+      {
+        "path": "voices/af_jessica.safetensors",
+        "size": 522320,
+        "sha256": "c358448e4277b79e8b13b92033711660a1a2205c3940c2dfb16698b99fed58a8"
+      },
+      {
+        "path": "voices/af_kore.safetensors",
+        "size": 522320,
+        "sha256": "c491174280cb1ad25210a842f2f34b46a9ef904ec6f6a8e784839531795fa278"
+      },
+      {
+        "path": "voices/af_nicole.safetensors",
+        "size": 522320,
+        "sha256": "574656386022c81a029e9a72558191925f44c3de2dad2fa2e45751938557d062"
+      },
+      {
+        "path": "voices/af_nova.safetensors",
+        "size": 522320,
+        "sha256": "242b9a0a01eac1ac2865c69fc617a756b20d86df82d5fae3970533e2312ca50e"
+      },
+      {
+        "path": "voices/af_river.safetensors",
+        "size": 522320,
+        "sha256": "82c866b0b976d50e82cbd781ac7bc771471ce5bd21decf05ab92812a08fb1c04"
+      },
+      {
+        "path": "voices/af_sarah.safetensors",
+        "size": 522320,
+        "sha256": "4940072182542f54c1035d1daf4c1cf3136ca9baa9ac57c8e006b4befcc50be6"
+      },
+      {
+        "path": "voices/af_sky.safetensors",
+        "size": 522320,
+        "sha256": "957af332330db8e9bd7f9dc449475a946cb0d7d689afef64b91007bbbf20eaa0"
+      },
+      {
+        "path": "voices/am_adam.safetensors",
+        "size": 522320,
+        "sha256": "a4f60a3b9c20353c2604a17485ba53260502a758681a84d41e8af53cc559d929"
+      },
+      {
+        "path": "voices/am_echo.safetensors",
+        "size": 522320,
+        "sha256": "031fc608a900332c4e1a29bd0884f5d0e84bd0348261fa79981e5cbd138c950d"
+      },
+      {
+        "path": "voices/am_eric.safetensors",
+        "size": 522320,
+        "sha256": "1fb4a61dcee1f114f90886ecf29bc2feed05e29eed9caa6ddb109f1934d73274"
+      },
+      {
+        "path": "voices/am_fenrir.safetensors",
+        "size": 522320,
+        "sha256": "9abed964b906c4cae6f404d9849e76260689aea862bc6ca85fc3f5207ba96538"
+      },
+      {
+        "path": "voices/am_liam.safetensors",
+        "size": 522320,
+        "sha256": "66b65a96e16c3d91035a6e9019d9986ed524d27ce35b487270cdf61c99e3ebad"
+      },
+      {
+        "path": "voices/am_michael.safetensors",
+        "size": 522320,
+        "sha256": "3940147ded35deba0bb52e8132f89b719298e0520258c34584358aa5a24da2ea"
+      },
+      {
+        "path": "voices/am_onyx.safetensors",
+        "size": 522320,
+        "sha256": "b5d6132a5747648d98c82c9c4aaa9cf52d7230e63e403c1cb9c12858446ca5f5"
+      },
+      {
+        "path": "voices/am_puck.safetensors",
+        "size": 522320,
+        "sha256": "9a8c2e56413bd2063f814cb4c3885fc425876157369117c3f8258d03c8a9ad89"
+      },
+      {
+        "path": "voices/am_santa.safetensors",
+        "size": 522320,
+        "sha256": "d1f433b57ffccf105ea9e434ea19af6c2a8a7916ba6d1a73c34f0046bd226084"
+      },
+      {
+        "path": "voices/bf_alice.safetensors",
+        "size": 522320,
+        "sha256": "9c77e390d93d9db7c4a7526c3b1f393290a2be46f233b89a00b8188e850c20a8"
+      },
+      {
+        "path": "voices/bf_emma.safetensors",
+        "size": 522320,
+        "sha256": "8878a75a6661305849eeb1d6293a7177250193616e161b4c3100636434dfe69f"
+      },
+      {
+        "path": "voices/bf_isabella.safetensors",
+        "size": 522320,
+        "sha256": "f7b6076f025649699fcfed1a6debf13049a87afdc7aafc8c72b7d81246db6ead"
+      },
+      {
+        "path": "voices/bf_lily.safetensors",
+        "size": 522320,
+        "sha256": "ee77a419046a765420ac82cb46e8b8cf5754a0b9d20c340fece1d4b18be7ecdb"
+      },
+      {
+        "path": "voices/bm_daniel.safetensors",
+        "size": 522320,
+        "sha256": "b195dec592ee024f57ddc5bf481464596082ba60998a2a295eba90bfc1064f4b"
+      },
+      {
+        "path": "voices/bm_fable.safetensors",
+        "size": 522320,
+        "sha256": "9fa80184e96d016a744bc13b0b2e7695e55d6b855556fa003325cb1e5ebf2c2b"
+      },
+      {
+        "path": "voices/bm_george.safetensors",
+        "size": 522320,
+        "sha256": "a3d9b8995cbbe5536f954b6be2a0f1f312f077118ba0d4d2178fc41dc8306672"
+      },
+      {
+        "path": "voices/bm_lewis.safetensors",
+        "size": 522320,
+        "sha256": "e1e68013c21a141efe527aaec561e1174c2f5a6951b3bcecc8396adab315b247"
+      },
+      {
+        "path": "voices/ef_dora.safetensors",
+        "size": 522320,
+        "sha256": "13f6dfe8a498ce97a384186af045b586db6292869acbfde123a0fa2798229351"
+      },
+      {
+        "path": "voices/em_alex.safetensors",
+        "size": 522320,
+        "sha256": "e3bc4bf56ab47f0d52074cd3f84cd4f1713187285fdd85a545c6e167dfa3ab77"
+      },
+      {
+        "path": "voices/em_santa.safetensors",
+        "size": 522320,
+        "sha256": "37c44211b77b3f29512f420bd5a2e146c7769a5ad3d904b3455cccd55055db62"
+      },
+      {
+        "path": "voices/ff_siwis.safetensors",
+        "size": 522320,
+        "sha256": "5c659c9b9e12be28b98a4aa0cd6b1e66f359b6381ba5680264e9072945ac32b8"
+      },
+      {
+        "path": "voices/hf_alpha.safetensors",
+        "size": 522320,
+        "sha256": "e93355a43e6f57e8cfde96874008c858f1fb7fd8b65dd043114d451882cad3f6"
+      },
+      {
+        "path": "voices/hf_beta.safetensors",
+        "size": 522320,
+        "sha256": "976ea52ba7edce5da049c41ef06a663f3807fd470d2ea5c359245dfc2fb00d66"
+      },
+      {
+        "path": "voices/hm_omega.safetensors",
+        "size": 522320,
+        "sha256": "227f0c710d1169686bf617fac486e8496982e96cc01617a3acd3579db75dd126"
+      },
+      {
+        "path": "voices/hm_psi.safetensors",
+        "size": 522320,
+        "sha256": "03efb26b99e78c8d40ade3217f9c9905f8f84bbad7f21f921e270c036b01144e"
+      },
+      {
+        "path": "voices/if_sara.safetensors",
+        "size": 522320,
+        "sha256": "2f3d092c8ba16f2007e8b234c9a55bdebec614a1e50143e41b39dd7f89fdb45b"
+      },
+      {
+        "path": "voices/im_nicola.safetensors",
+        "size": 522320,
+        "sha256": "96b62f7d25c3e7efce4f2506beeaa9f63bcc73524c7b2862738c65433fe9ba16"
+      },
+      {
+        "path": "voices/jf_alpha.safetensors",
+        "size": 522320,
+        "sha256": "455f78a6ebe633929cf314ce7c4a6b595ad1fb0ec7de6de7bc1d62d37e5264d2"
+      },
+      {
+        "path": "voices/jf_gongitsune.safetensors",
+        "size": 522320,
+        "sha256": "30d744337db7a7a91185b129dfd24ca86c19f7d46acadf2daf077ba78edaba81"
+      },
+      {
+        "path": "voices/jf_nezumi.safetensors",
+        "size": 522320,
+        "sha256": "65743c88fa1c8d30d7f41e402ce30a6ce461e2b0f8095c252e51905eb0c0754a"
+      },
+      {
+        "path": "voices/jf_tebukuro.safetensors",
+        "size": 522320,
+        "sha256": "0cc28d928ce14b2ba4586b4c552edba36828a0961a37649530f80b3ad809bdec"
+      },
+      {
+        "path": "voices/jm_kumo.safetensors",
+        "size": 522320,
+        "sha256": "9f6b9d85ae099c409193924add0f1c478d7c9b6904ef181f2297154bfe05cc2c"
+      },
+      {
+        "path": "voices/pf_dora.safetensors",
+        "size": 522320,
+        "sha256": "9a8d587d60d0e041f593f7e7488943e7a6821f0136961bf0e554572e12c91c77"
+      },
+      {
+        "path": "voices/pm_alex.safetensors",
+        "size": 522320,
+        "sha256": "bec864eaeb05cc1a6fa12777ad31faaae1b2ed6d5eb2a6f7370fb9cdc48e3e2f"
+      },
+      {
+        "path": "voices/pm_santa.safetensors",
+        "size": 522320,
+        "sha256": "5009747fd93841c0865830be0f577ed50800b41b2122c469dedf51bb8311f78d"
+      },
+      {
+        "path": "voices/zf_xiaobei.safetensors",
+        "size": 522320,
+        "sha256": "cbda378bbe266c735aa13c94c20b6224f2f8d0e16cf3abe612a4e6d93ebeab51"
+      },
+      {
+        "path": "voices/zf_xiaoni.safetensors",
+        "size": 522320,
+        "sha256": "ef37a82850e10eb15f18a4549c76707a8eebd682e61facdda6ee4a4dc4eb0bf0"
+      },
+      {
+        "path": "voices/zf_xiaoxiao.safetensors",
+        "size": 522320,
+        "sha256": "cf507ad2319c50121aca4755cd3b9793bde10eea9aa9caca6cb3b5914d5f258f"
+      },
+      {
+        "path": "voices/zf_xiaoyi.safetensors",
+        "size": 522320,
+        "sha256": "1f2b7ce315a84870170ca83b2e4c0a072242bacbbd869f8a3b22377cc7d59e0b"
+      },
+      {
+        "path": "voices/zm_yunjian.safetensors",
+        "size": 522320,
+        "sha256": "a08940c5dd3d8aadfda8a5576aa0f688a184ccbd5e4408d7a2a8144ab1fb3040"
+      },
+      {
+        "path": "voices/zm_yunxi.safetensors",
+        "size": 522320,
+        "sha256": "78d8bb5ba4a2ea75a7f22c6148214a7434b436db85dc791a2ddf2aa7f6cc6fab"
+      },
+      {
+        "path": "voices/zm_yunxia.safetensors",
+        "size": 522320,
+        "sha256": "59a4ba431ffa7165b95d5b953097affb71110b3039f81c4439cf0f7464bcb2ee"
+      },
+      {
+        "path": "voices/zm_yunyang.safetensors",
+        "size": 522320,
+        "sha256": "8ad45c1077ab0d973ebb85ebb84f797caf6c6b188255c1178511a6feba3a0611"
+      },
+      {
+        "path": "resources/unidic-3.1.0.zip",
+        "url": "https://cotonoha-dic.s3-ap-northeast-1.amazonaws.com/unidic-3.1.0.zip",
+        "size": 525943040,
+        "sha256": "638718c4c63625ab300de4c92c67925d54c0e9e3830009eaa992f29819d59c43",
+        "resource": "unidic"
+      }
+    ],
+    "sizeBytes": 881265823,
+    "task": "synthesis",
+    "format": "MLX BF16",
+    "description": {
+      "ru": "Компактная озвучка готовыми голосами. В базовой версии нет русского.",
+      "en": "Compact speech generation with preset voices. The base model has no Russian."
+    },
+    "features": [
+      "presets"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "hi",
+      "it",
+      "ja",
+      "pt",
+      "zh"
+    ],
+    "license": "Apache-2.0 (model); UniDic: BSD, LGPL or GPL (bundled licenses)",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Kokoro-82M-bf16",
+    "verifiedOn": "2026-10-29",
+    "adapter": "kokoro",
+    "synthesisMode": "preset",
+    "presetVoices": [
+      "af_alloy",
+      "af_aoede",
+      "af_bella",
+      "af_heart",
+      "af_jessica",
+      "af_kore",
+      "af_nicole",
+      "af_nova",
+      "af_river",
+      "af_sarah",
+      "af_sky",
+      "am_adam",
+      "am_echo",
+      "am_eric",
+      "am_fenrir",
+      "am_liam",
+      "am_michael",
+      "am_onyx",
+      "am_puck",
+      "am_santa",
+      "bf_alice",
+      "bf_emma",
+      "bf_isabella",
+      "bf_lily",
+      "bm_daniel",
+      "bm_fable",
+      "bm_george",
+      "bm_lewis",
+      "ef_dora",
+      "em_alex",
+      "em_santa",
+      "ff_siwis",
+      "hf_alpha",
+      "hf_beta",
+      "hm_omega",
+      "hm_psi",
+      "if_sara",
+      "im_nicola",
+      "jf_alpha",
+      "jf_gongitsune",
+      "jf_nezumi",
+      "jf_tebukuro",
+      "jm_kumo",
+      "pf_dora",
+      "pm_alex",
+      "pm_santa",
+      "zf_xiaobei",
+      "zf_xiaoni",
+      "zf_xiaoxiao",
+      "zf_xiaoyi",
+      "zm_yunjian",
+      "zm_yunxi",
+      "zm_yunxia",
+      "zm_yunyang"
+    ],
+    "defaultTemperature": null,
+    "supportsSeed": false,
+    "notes": {
+      "ru": "В комплект входит UniDic 3.1 для японских голосов. Словарь распаковывается локально; потребуется ещё около 812 МБ на диске.",
+      "en": "Includes UniDic 3.1 for Japanese voices. The dictionary is unpacked locally and needs about 812 MB of additional disk space."
+    },
+    "resourceBytes": 811662835
+  },
+  {
+    "id": "piper-dmitri",
+    "name": "Piper — Dmitri",
+    "repo": "rhasspy/piper-voices",
+    "revision": "5041a7a49ae5b3a0f30e6837769eb03fdbb231bd",
+    "files": [
+      {
+        "path": "ru/ru_RU/dmitri/medium/MODEL_CARD",
+        "size": 277,
+        "sha256": null
+      },
+      {
+        "path": "ru/ru_RU/dmitri/medium/ru_RU-dmitri-medium.onnx",
+        "size": 63201294,
+        "sha256": "f073356ebc4bd0f80c5af58df2953a5988bd5bdab1eb38635ce960b071fbefcb"
+      },
+      {
+        "path": "ru/ru_RU/dmitri/medium/ru_RU-dmitri-medium.onnx.json",
+        "size": 4824,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 63206395,
+    "task": "synthesis",
+    "format": "ONNX",
+    "description": {
+      "ru": "Готовый русский голос в компактном формате для работы на процессоре.",
+      "en": "A compact preset Russian voice for CPU inference."
+    },
+    "features": [
+      "presets"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "license": "Voice MODEL_CARD / dataset CC0",
+    "integration": "ready",
+    "runtime": "piper",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/dmitri/medium/MODEL_CARD",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "ru/ru_RU/dmitri/medium",
+    "synthesisMode": "preset",
+    "presetVoices": [
+      "dmitri"
+    ],
+    "adapter": "piper",
+    "defaultTemperature": null,
+    "supportsSeed": false
+  },
+  {
+    "id": "silero-v5-ru",
+    "name": "Silero TTS v5.6 RU",
+    "repo": "snakers4/silero-models",
+    "revision": "v5.6",
+    "files": [
+      {
+        "path": "model.pt",
+        "size": 147664410,
+        "sha256": "04cc9b1d08ce38bcaa9d02c488d80d3e6806d17f7eaa7c95982f36a3cbf50b2e",
+        "url": "https://models.silero.ai/models/tts/ru/v5_6_ru.pt"
+      }
+    ],
+    "sizeBytes": 147664410,
+    "task": "synthesis",
+    "format": "PyTorch / CPU",
+    "description": {
+      "ru": "Готовые русские голоса, ударения, омографы и SSML.",
+      "en": "Preset Russian voices, stress handling, homographs and SSML."
+    },
+    "features": [
+      "presets",
+      "ssml"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "license": "CC-BY-NC 4.0",
+    "integration": "ready",
+    "runtime": "torch-audio",
+    "downloadable": true,
+    "gated": false,
+    "sourceUrl": "https://github.com/snakers4/silero-models",
+    "verifiedOn": "2026-11-02",
+    "artifactSource": "url",
+    "adapter": "silero",
+    "synthesisMode": "preset",
+    "presetVoices": [
+      "aidar",
+      "baya",
+      "kseniya",
+      "xenia",
+      "eugene"
+    ],
+    "markup": "ssml",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "piper-irina",
+    "name": "Piper — Irina",
+    "repo": "rhasspy/piper-voices",
+    "revision": "5041a7a49ae5b3a0f30e6837769eb03fdbb231bd",
+    "files": [
+      {
+        "path": "ru/ru_RU/irina/medium/MODEL_CARD",
+        "size": 271,
+        "sha256": null
+      },
+      {
+        "path": "ru/ru_RU/irina/medium/ru_RU-irina-medium.onnx",
+        "size": 63201294,
+        "sha256": "8ff38212d23da300bbe3705c645e6e5b9475f0bfde01558eb17813e22acaaaaa"
+      },
+      {
+        "path": "ru/ru_RU/irina/medium/ru_RU-irina-medium.onnx.json",
+        "size": 4765,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 63206330,
+    "task": "synthesis",
+    "format": "ONNX",
+    "description": {
+      "ru": "Готовый русский голос в компактном формате для работы на процессоре.",
+      "en": "A compact preset Russian voice for CPU inference."
+    },
+    "features": [
+      "presets"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "license": "Unknown — see voice MODEL_CARD",
+    "integration": "ready",
+    "runtime": "piper",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/irina/medium/MODEL_CARD",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "ru/ru_RU/irina/medium",
+    "synthesisMode": "preset",
+    "presetVoices": [
+      "irina"
+    ],
+    "adapter": "piper",
+    "defaultTemperature": null,
+    "supportsSeed": false
+  },
+  {
+    "id": "piper-denis",
+    "name": "Piper — Denis",
+    "repo": "rhasspy/piper-voices",
+    "revision": "5041a7a49ae5b3a0f30e6837769eb03fdbb231bd",
+    "files": [
+      {
+        "path": "ru/ru_RU/denis/medium/MODEL_CARD",
+        "size": 276,
+        "sha256": null
+      },
+      {
+        "path": "ru/ru_RU/denis/medium/ru_RU-denis-medium.onnx",
+        "size": 63201294,
+        "sha256": "15fab56e11a097858ee115545d0f697fc2a316c41a291a5362349fb870411b0a"
+      },
+      {
+        "path": "ru/ru_RU/denis/medium/ru_RU-denis-medium.onnx.json",
+        "size": 4823,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 63206393,
+    "task": "synthesis",
+    "format": "ONNX",
+    "description": {
+      "ru": "Готовый русский голос в компактном формате для работы на процессоре.",
+      "en": "A compact preset Russian voice for CPU inference."
+    },
+    "features": [
+      "presets"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "license": "Voice MODEL_CARD / dataset CC0",
+    "integration": "ready",
+    "runtime": "piper",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/denis/medium/MODEL_CARD",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "ru/ru_RU/denis/medium",
+    "synthesisMode": "preset",
+    "presetVoices": [
+      "denis"
+    ],
+    "adapter": "piper",
+    "defaultTemperature": null,
+    "supportsSeed": false
+  },
+  {
+    "id": "piper-ruslan",
+    "name": "Piper — Ruslan",
+    "repo": "rhasspy/piper-voices",
+    "revision": "5041a7a49ae5b3a0f30e6837769eb03fdbb231bd",
+    "files": [
+      {
+        "path": "ru/ru_RU/ruslan/medium/MODEL_CARD",
+        "size": 313,
+        "sha256": null
+      },
+      {
+        "path": "ru/ru_RU/ruslan/medium/ru_RU-ruslan-medium.onnx",
+        "size": 63201294,
+        "sha256": "72a5f88e0b20928064eb45d88e1daa21f8af62d18613580d32cbb4aed48dcf7f"
+      },
+      {
+        "path": "ru/ru_RU/ruslan/medium/ru_RU-ruslan-medium.onnx.json",
+        "size": 4882,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 63206489,
+    "task": "synthesis",
+    "format": "ONNX",
+    "description": {
+      "ru": "Готовый русский голос в компактном формате для работы на процессоре.",
+      "en": "A compact preset Russian voice for CPU inference."
+    },
+    "features": [
+      "presets"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "license": "Voice MODEL_CARD / dataset CC-BY-NC-SA 4.0",
+    "integration": "ready",
+    "runtime": "piper",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/rhasspy/piper-voices/blob/5041a7a49ae5b3a0f30e6837769eb03fdbb231bd/ru/ru_RU/ruslan/medium/MODEL_CARD",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "ru/ru_RU/ruslan/medium",
+    "synthesisMode": "preset",
+    "presetVoices": [
+      "ruslan"
+    ],
+    "adapter": "piper",
+    "defaultTemperature": null,
+    "supportsSeed": false
+  },
+  {
+    "id": "f5-tts",
+    "name": "F5-TTS v1 Base",
+    "repo": "lucasnewman/f5-tts-mlx",
+    "revision": "2d719cadec8fd3887c8599475a5f65924d523654",
+    "files": [
+      {
+        "path": "duration_v2.safetensors",
+        "size": 86238439,
+        "sha256": "25c4701cf765a9175d4fac624b39baab9714cffb41a73465438326952a23348e"
+      },
+      {
+        "path": "model_v1_4b.safetensors",
+        "size": 232477651,
+        "sha256": "a7bdc5f6b021d4636205a97896383e8dc012de1b967aca85074e7a461eb1b007"
+      },
+      {
+        "path": "vocab.txt",
+        "size": 11255,
+        "sha256": null
+      },
+      {
+        "path": "config.yaml",
+        "size": 461,
+        "sha256": null,
+        "repo": "lucasnewman/vocos-mel-24khz",
+        "revision": "ee89d00fac94b61e1235e0869f3e8d49711b7484"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 54348264,
+        "sha256": "7fd11dcafe62b373156b3a12c0199bbc09b0ce1636692f97eef99ffec02fadb2",
+        "repo": "lucasnewman/vocos-mel-24khz",
+        "revision": "ee89d00fac94b61e1235e0869f3e8d49711b7484"
+      }
+    ],
+    "sizeBytes": 373076070,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Клонирование с точным текстом образца. Базовые языки — английский и китайский.",
+      "en": "Reference cloning with an exact transcript. Base languages are English and Chinese."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "license": "cc-by-nc-4.0",
+    "integration": "ready",
+    "runtime": "f5",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/lucasnewman/f5-tts-mlx",
+    "verifiedOn": "2026-10-29",
+    "notes": {
+      "ru": "Эталон голоса должен быть на английском или китайском языке. Русский эталон не подходит.",
+      "en": "The voice reference must be in English or Chinese. A Russian reference is not supported."
+    },
+    "adapter": "f5",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "referenceLanguages": [
+      "en",
+      "zh"
+    ],
+    "languageMode": "text"
+  },
+  {
+    "id": "index-tts2",
+    "name": "IndexTTS 2",
+    "repo": "mlx-community/IndexTTS-2-MLX",
+    "revision": "d571c8a9f37f3aa051ad57c11124a8498c7867f6",
+    "files": [
+      {
+        "path": "LICENSE.txt",
+        "size": 10554,
+        "sha256": null
+      },
+      {
+        "path": "LICENSE_ZH.txt",
+        "size": 7336,
+        "sha256": null
+      },
+      {
+        "path": "bigvgan.safetensors",
+        "size": 448842303,
+        "sha256": "e137f3aae12de6f7935e4a4ec72cc14df788dcc6d11c55ecc09c12528418a99c"
+      },
+      {
+        "path": "config.json",
+        "size": 2440,
+        "sha256": null
+      },
+      {
+        "path": "config.yaml",
+        "size": 2882,
+        "sha256": null
+      },
+      {
+        "path": "feat1.pt",
+        "size": 57170,
+        "sha256": "f219cb447d80216ba615666da2ff8d63ac544eee26657f3a7b278692bf7a67c4"
+      },
+      {
+        "path": "feat2.pt",
+        "size": 374866,
+        "sha256": "9c4292e96dee535aea9a6206e9a0c856dd578dde9212acdb16dd3ada4d12bf80"
+      },
+      {
+        "path": "gpt.safetensors",
+        "size": 3463998258,
+        "sha256": "4103b0359f42e3ba5b23b9276872f8d26e1449e844f1412d5c38b3756b89b38e"
+      },
+      {
+        "path": "s2mel.safetensors",
+        "size": 414608296,
+        "sha256": "b923a2ee539db5079210dbf503ce79c68a7d858fd0b4178b6addfdee6cd8bde1"
+      },
+      {
+        "path": "tokenizer.model",
+        "size": 475997,
+        "sha256": "b2a5ce8090d32da3642cc4f81fdc996376bc6dd3f4cd5e3d165f71120d9f2bc8"
+      },
+      {
+        "path": "vq2emb.safetensors",
+        "size": 299276,
+        "sha256": "12e7f6ddec7bdd485178fa572afe2e43d9d0e7dae296a0973dd5e33a1257e68a"
+      },
+      {
+        "path": "wav2vec2bert_stats.pt",
+        "size": 9343,
+        "sha256": "c9c176c2b8850ab2e3ba828bbfa969deaf4566ce55db5f2687b8430b87526ad2"
+      },
+      {
+        "path": "config.json",
+        "size": 1874,
+        "sha256": null,
+        "repo": "facebook/w2v-bert-2.0",
+        "revision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 2322063736,
+        "sha256": "eb890c9660ed6e3414b6812e27257b8ce5454365d5490d3ad581ea60b93be043",
+        "repo": "facebook/w2v-bert-2.0",
+        "revision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 275,
+        "sha256": null,
+        "repo": "facebook/w2v-bert-2.0",
+        "revision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b"
+      },
+      {
+        "path": "semantic_codec/model.safetensors",
+        "size": 177183712,
+        "sha256": "ec947271175d8cad75ec37e83aa487e27c97a0f72a303393772da5ffa84bddf2",
+        "repo": "amphion/MaskGCT",
+        "revision": "265c6cef07625665d0c28d2faafb1415562379dc"
+      },
+      {
+        "path": "campplus_cn_common.bin",
+        "size": 28036335,
+        "sha256": "3388cf5fd3493c9ac9c69851d8e7a8badcfb4f3dc631020c4961371646d5ada8",
+        "repo": "funasr/campplus",
+        "revision": "e4b6ede7ce16997aff4ae69fbca1f0175e2afede"
+      }
+    ],
+    "sizeBytes": 6855974653,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Клонирование и управление эмоцией для английского и китайского.",
+      "en": "Voice cloning and emotion control for English and Chinese."
+    },
+    "features": [
+      "cloning",
+      "emotion"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "license": "Bilibili Model License",
+    "integration": "ready",
+    "runtime": "index",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/IndexTTS-2-MLX",
+    "verifiedOn": "2026-10-29",
+    "notes": {
+      "ru": "Дополнительные компоненты устанавливаются автоматически. Подача: как в образце, восторженно или сердито.",
+      "en": "Required components install automatically. Delivery: from reference, excited or angry."
+    },
+    "adapter": "index",
+    "synthesisMode": "clone",
+    "defaultTemperature": 0.8,
+    "supportsSeed": true,
+    "languageMode": "text"
+  },
+  {
+    "id": "vibevoice-1-5b",
+    "name": "VibeVoice 1.5B",
+    "repo": "microsoft/VibeVoice-1.5B",
+    "revision": "c00898d257e6b46004e3e2866a47534085fb685a",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 2762,
+        "sha256": null
+      },
+      {
+        "path": "model-00001-of-00003.safetensors",
+        "size": 1975317828,
+        "sha256": "c5f0a61ddeaeb028e3af540ba4dee7933ad30f9f30b6e1320dd9c875a2daa033"
+      },
+      {
+        "path": "model-00002-of-00003.safetensors",
+        "size": 1983051688,
+        "sha256": "81c3891f7b2493eb48a9eb6f5be0df48d4f1a4bfd952d84e21683ca6d0bf7969"
+      },
+      {
+        "path": "model-00003-of-00003.safetensors",
+        "size": 1449832938,
+        "sha256": "cb6e7e5e86b4a41fffbe1f3aaf445d0d50b5e21ed47574101b777f77d75fa196"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 122616,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 351,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 681,
+        "sha256": null,
+        "repo": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671839,
+        "sha256": null,
+        "repo": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 7031645,
+        "sha256": null,
+        "repo": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 7228,
+        "sha256": null,
+        "repo": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null,
+        "repo": "Qwen/Qwen2.5-0.5B",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      }
+    ],
+    "sizeBytes": 5419816409,
+    "task": "synthesis",
+    "format": "PyTorch",
+    "description": {
+      "ru": "Длинные диалоги с несколькими голосами на английском и китайском.",
+      "en": "Long-form multi-speaker dialogue in English and Chinese."
+    },
+    "features": [
+      "cloning",
+      "dialogue"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "license": "mit",
+    "integration": "ready",
+    "runtime": "mlx-speech",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/microsoft/VibeVoice-1.5B",
+    "verifiedOn": "2026-10-29",
+    "adapter": "vibevoice-speech",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "tokenizerRepo": "Qwen/Qwen2.5-0.5B",
+    "languageMode": "text"
+  },
+  {
+    "id": "vibevoice-large-mlx",
+    "name": "VibeVoice Large",
+    "repo": "appautomaton/vibevoice-mlx",
+    "revision": "61c5e40cd267c0442493b80b35d880202337c84e",
+    "files": [
+      {
+        "path": "mlx-int8/config.json",
+        "size": 3119,
+        "sha256": null
+      },
+      {
+        "path": "mlx-int8/configuration.json",
+        "size": 72,
+        "sha256": null
+      },
+      {
+        "path": "mlx-int8/model.safetensors",
+        "size": 10046134604,
+        "sha256": "e44d39e4a8e459a2fb3394cf07d36a0f9d19046e4115da9d8704f5c1d518f605"
+      },
+      {
+        "path": "mlx-int8/preprocessor_config.json",
+        "size": 349,
+        "sha256": null
+      },
+      {
+        "path": "mlx-int8/tokenizer.json",
+        "size": 7031645,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 10053169789,
+    "task": "synthesis",
+    "format": "MLX INT8",
+    "description": {
+      "ru": "Более крупная MLX-сборка для разговорной речи и нескольких голосов.",
+      "en": "A larger MLX build for conversational and multi-speaker speech."
+    },
+    "features": [
+      "cloning",
+      "dialogue"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-speech",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/appautomaton/vibevoice-mlx",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "mlx-int8",
+    "adapter": "vibevoice-speech",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "languageMode": "text",
+    "notes": {
+      "ru": "На некоторых коротких образцах модель может повторять слова исходной записи. Проверьте результат; при повторе выберите более длинный образец.",
+      "en": "With some short references the model may repeat words from the source recording. Review the result; if this happens, select a longer reference."
+    }
+  },
+  {
+    "id": "longcat",
+    "name": "LongCat AudioDiT 3.5B",
+    "repo": "appautomaton/longcat-audiodit-3.5b-8bit-mlx",
+    "revision": "03f956fab262146586dbfd9bf16a35535bc31c92",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1064,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 2552,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 4887821198,
+        "sha256": "1f5533166ba860a4d343ebbc492a59890f8a7159811a721bb9bc43c8e2deba5a"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 6623,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 16853013,
+        "sha256": "af904105ce1071b1202bba0059a841f4a7b85b48b6ec179c4948e3483476e0dd"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 6841,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 4904691291,
+    "task": "synthesis",
+    "format": "MLX INT8",
+    "description": {
+      "ru": "Клонирование по записи и тексту на английском и китайском.",
+      "en": "Reference-based voice cloning in English and Chinese."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "license": "mit",
+    "integration": "ready",
+    "runtime": "mlx-speech",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/appautomaton/longcat-audiodit-3.5b-8bit-mlx",
+    "verifiedOn": "2026-10-29",
+    "adapter": "longcat",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "languageMode": "text"
+  },
+  {
+    "id": "dots-soar",
+    "name": "dots.tts SOAR",
+    "repo": "appautomaton/dots-tts-mlx",
+    "revision": "120f555ed6dfeacdacb93258ddea3bd729c068eb",
+    "files": [
+      {
+        "path": "soar/mlx-int8/config.json",
+        "size": 1933,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/core.safetensors",
+        "size": 2949614907,
+        "sha256": "9eb78ce331cc116b990dfc4276f49fd548de7a232a710375a02fe9d296a9bdb9"
+      },
+      {
+        "path": "soar/mlx-int8/latent_stats.safetensors",
+        "size": 1160,
+        "sha256": "370ea7fe3e54c06336ff050eaf14f9554417f39b002b2dad5228f67c86c7260f"
+      },
+      {
+        "path": "soar/mlx-int8/llm_config.json",
+        "size": 2727,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/mlx_config.json",
+        "size": 9881,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/speaker.safetensors",
+        "size": 29122718,
+        "sha256": "105356b29dfe40c986412db337c252ab2d227703f433de64b525078de6ca5858"
+      },
+      {
+        "path": "soar/mlx-int8/tokenizer/added_tokens.json",
+        "size": 831,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/tokenizer/chat_template.jinja",
+        "size": 2427,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/tokenizer/merges.txt",
+        "size": 1671853,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/tokenizer/special_tokens_map.json",
+        "size": 1398,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/tokenizer/tokenizer.json",
+        "size": 11423263,
+        "sha256": "c16521f66774c7a4774e5303b7c8ec5c99830c0be5aef6c6edde3ca2a5e05dd0"
+      },
+      {
+        "path": "soar/mlx-int8/tokenizer/tokenizer_config.json",
+        "size": 5886,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/tokenizer/vocab.json",
+        "size": 2776833,
+        "sha256": null
+      },
+      {
+        "path": "soar/mlx-int8/vocoder.safetensors",
+        "size": 451779177,
+        "sha256": "e5b229d076aec43c20f7f259d2a2bbc75a4384b34adf7a669eefc69bff25e1c0"
+      }
+    ],
+    "sizeBytes": 3446414994,
+    "task": "synthesis",
+    "format": "MLX INT8",
+    "description": {
+      "ru": "Синтез и клонирование на английском и китайском, отдельная архитектура SOAR.",
+      "en": "English and Chinese speech generation and cloning with the SOAR architecture."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-speech",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/appautomaton/dots-tts-mlx",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "soar/mlx-int8",
+    "adapter": "dots",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "dots-mf",
+    "name": "dots.tts MeanFlow",
+    "repo": "appautomaton/dots-tts-mlx",
+    "revision": "120f555ed6dfeacdacb93258ddea3bd729c068eb",
+    "files": [
+      {
+        "path": "mf/mlx-int8/config.json",
+        "size": 2091,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/core.safetensors",
+        "size": 2952240868,
+        "sha256": "c63e2c5f3409399a976596aa3cf71f8e2ebab6754f6bebe6442bc6d30ca89bc6"
+      },
+      {
+        "path": "mf/mlx-int8/latent_stats.safetensors",
+        "size": 1160,
+        "sha256": "370ea7fe3e54c06336ff050eaf14f9554417f39b002b2dad5228f67c86c7260f"
+      },
+      {
+        "path": "mf/mlx-int8/llm_config.json",
+        "size": 2727,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/mlx_config.json",
+        "size": 9870,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/speaker.safetensors",
+        "size": 29122718,
+        "sha256": "105356b29dfe40c986412db337c252ab2d227703f433de64b525078de6ca5858"
+      },
+      {
+        "path": "mf/mlx-int8/tokenizer/added_tokens.json",
+        "size": 831,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/tokenizer/chat_template.jinja",
+        "size": 2427,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/tokenizer/merges.txt",
+        "size": 1671853,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/tokenizer/special_tokens_map.json",
+        "size": 1398,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/tokenizer/tokenizer.json",
+        "size": 11423263,
+        "sha256": "c16521f66774c7a4774e5303b7c8ec5c99830c0be5aef6c6edde3ca2a5e05dd0"
+      },
+      {
+        "path": "mf/mlx-int8/tokenizer/tokenizer_config.json",
+        "size": 5886,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/tokenizer/vocab.json",
+        "size": 2776833,
+        "sha256": null
+      },
+      {
+        "path": "mf/mlx-int8/vocoder.safetensors",
+        "size": 451779177,
+        "sha256": "e5b229d076aec43c20f7f259d2a2bbc75a4384b34adf7a669eefc69bff25e1c0"
+      }
+    ],
+    "sizeBytes": 3449041102,
+    "task": "synthesis",
+    "format": "MLX INT8",
+    "description": {
+      "ru": "Синтез и клонирование на английском и китайском, отдельная архитектура MeanFlow.",
+      "en": "English and Chinese speech generation and cloning with the MeanFlow architecture."
+    },
+    "features": [
+      "cloning"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-speech",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/appautomaton/dots-tts-mlx",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "mf/mlx-int8",
+    "adapter": "dots",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "parler-mini",
+    "name": "Parler-TTS Mini",
+    "repo": "parler-tts/parler-tts-mini-v1",
+    "revision": "0392b9451a601e528fd863bbb0598431fee810d9",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 6930,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 265,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 3511490560,
+        "sha256": "bc430eb6752b96ffb3f67036d1a6e207fbd031575a775716ffa64ef1eeb03692"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 234,
+        "sha256": null
+      },
+      {
+        "path": "requirements.txt",
+        "size": 49,
+        "sha256": null
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 2543,
+        "sha256": null
+      },
+      {
+        "path": "spiece.model",
+        "size": 791656,
+        "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 2422234,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 20797,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 3514735268,
+    "task": "synthesis",
+    "format": "PyTorch",
+    "description": {
+      "ru": "Английская озвучка с описанием тембра, темпа и манеры речи.",
+      "en": "English speech with descriptive control over timbre, pace and delivery."
+    },
+    "features": [
+      "design",
+      "emotion"
+    ],
+    "languages": [
+      "en"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "parler",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/parler-tts/parler-tts-mini-v1",
+    "verifiedOn": "2026-10-29",
+    "adapter": "parler",
+    "synthesisMode": "design",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "dia-1-6b",
+    "name": "Dia 1.6B",
+    "repo": "mlx-community/Dia-1.6B-4bit",
+    "revision": "d74afc38d6ee8909c1cf17ba2c281cfc66423bb7",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 81327,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 3222362016,
+        "sha256": "6d12955399a54871eea9c481fd30fdd348f37092159a0628a3feabe4a1bb95a8"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 25309,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 219,
+        "sha256": null,
+        "repo": "mlx-community/descript-audio-codec-44khz",
+        "revision": "91dff27c81edbb0992be17ac51d2c7d515411a32"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 306644869,
+        "sha256": "cf9b0711afdc362182afda1d6addfd1b6b6e95509dec85fe237ac9a0b8a7522b",
+        "repo": "mlx-community/descript-audio-codec-44khz",
+        "revision": "91dff27c81edbb0992be17ac51d2c7d515411a32"
+      },
+      {
+        "path": "config.json",
+        "size": 335,
+        "sha256": null,
+        "repo": "mlx-community/whisper-base-mlx-q4",
+        "revision": "780e14bdcd73371c3bb45f86aa038325aa42beb0"
+      },
+      {
+        "path": "weights.npz",
+        "size": 80473740,
+        "sha256": "de610861d15452d1219382c65f1020337249f0a23724542870b33a1ae98e21ee",
+        "repo": "mlx-community/whisper-base-mlx-q4",
+        "revision": "780e14bdcd73371c3bb45f86aa038325aa42beb0"
+      }
+    ],
+    "sizeBytes": 3609587815,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Английские диалоги с несколькими говорящими и неречевыми звуками.",
+      "en": "English multi-speaker dialogue with non-verbal vocal sounds."
+    },
+    "features": [
+      "dialogue",
+      "cloning",
+      "emotion"
+    ],
+    "languages": [
+      "en"
+    ],
+    "license": "apache-2.0; Whisper alignment: MIT",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Dia-1.6B-4bit",
+    "verifiedOn": "2026-10-29",
+    "adapter": "dia",
+    "synthesisMode": "clone",
+    "markup": "dia",
+    "defaultTemperature": 1.3,
+    "supportsSeed": true,
+    "alignmentRepo": "mlx-community/whisper-base-mlx-q4",
+    "notes": {
+      "ru": "Из длинного образца автоматически готовится фрагмент до 10 секунд с соответствующей частью исходной расшифровки. В комплект входит локальное выравнивание Whisper Base Q4 (около 80 МБ).",
+      "en": "Long references are automatically prepared as excerpts up to 10 seconds with their matching original transcript. Includes local Whisper Base Q4 alignment (about 80 MB)."
+    }
+  },
+  {
+    "id": "spark-tts",
+    "name": "Spark-TTS 0.5B",
+    "repo": "mlx-community/Spark-TTS-0.5B-4-6bit",
+    "revision": "9c2d9ceb76cfa1e34b30bf2c3c1e9ea43ca77fd8",
+    "files": [
+      {
+        "path": "BiCodec/config.yaml",
+        "size": 1164,
+        "sha256": null
+      },
+      {
+        "path": "BiCodec/model.safetensors",
+        "size": 625518756,
+        "sha256": "e9940cd48d4446e4340ced82d234bf5618350dd9f5db900ebe47a4fdb03867ec"
+      },
+      {
+        "path": "added_tokens.json",
+        "size": 508522,
+        "sha256": null
+      },
+      {
+        "path": "audio_tokenizer_config.yaml",
+        "size": 169,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 49046,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 298572047,
+        "sha256": "b2fbd9cbb7ecccfef12416030883033439433e77d84e9d0e06d9d4d9d0b4e594"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 44209,
+        "sha256": null
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 613,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 14129172,
+        "sha256": "9c8b057d6ca205a429cc3428b9fc815f0d6ee1d53106dd5e5b129ef9db2ff057"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 2579652,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      },
+      {
+        "path": "wav2vec2-large-xlsr-53/config.json",
+        "size": 1768,
+        "sha256": null
+      },
+      {
+        "path": "wav2vec2-large-xlsr-53/model.safetensors",
+        "size": 1261803488,
+        "sha256": "9a8b60ccc08ffcd555abc1df8e113228b9956e855034f4287d8c4ab7ae8b53ba"
+      },
+      {
+        "path": "wav2vec2-large-xlsr-53/preprocessor_config.json",
+        "size": 212,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 2205985651,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Клонирование и управляемый голос для английского и китайского.",
+      "en": "Voice cloning and controllable speech for English and Chinese."
+    },
+    "features": [
+      "cloning",
+      "design"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "license": "cc-by-nc-sa-4.0",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Spark-TTS-0.5B-4-6bit",
+    "verifiedOn": "2026-10-29",
+    "adapter": "spark",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "synthesisModes": [
+      "clone",
+      "design"
+    ],
+    "voiceDesignControls": "spark",
+    "languageMode": "text"
+  },
+  {
+    "id": "higgs-v2",
+    "name": "Higgs Audio V2",
+    "repo": "mlx-community/higgs-audio-v2-3B-mlx-q8",
+    "revision": "cada83e51fe3f49186b51738599827d6fc7850f6",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 6437,
+        "sha256": null
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 301,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 17209675,
+        "sha256": "1a222563314bf6ffe3471622bff017ff5bb0630f2924faf44216195ebfef2af3"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 50279,
+        "sha256": null
+      },
+      {
+        "path": "weights.safetensors",
+        "size": 6179697433,
+        "sha256": "aebeddb4690b4fb8680731d5a7ad54bfd531c2c1ad142ce542b173b5b180bec4"
+      },
+      {
+        "path": "audio_tokenizer/.gitattributes",
+        "size": 1519,
+        "sha256": null,
+        "repo": "mlx-community/higgs-audio-v2-tokenizer",
+        "revision": "175578e703e743eb93f5bdcb0e695892521d7734"
+      },
+      {
+        "path": "audio_tokenizer/LICENSE",
+        "size": 9171,
+        "sha256": null,
+        "repo": "mlx-community/higgs-audio-v2-tokenizer",
+        "revision": "175578e703e743eb93f5bdcb0e695892521d7734"
+      },
+      {
+        "path": "audio_tokenizer/config.json",
+        "size": 2531,
+        "sha256": null,
+        "repo": "mlx-community/higgs-audio-v2-tokenizer",
+        "revision": "175578e703e743eb93f5bdcb0e695892521d7734"
+      },
+      {
+        "path": "audio_tokenizer/model.safetensors",
+        "size": 805665628,
+        "sha256": "fe7c5e8785e0a05833e1bfc3e002ec7f55af21e306b2e7154a448c1f54ccfb0d",
+        "repo": "mlx-community/higgs-audio-v2-tokenizer",
+        "revision": "175578e703e743eb93f5bdcb0e695892521d7734"
+      },
+      {
+        "path": "audio_tokenizer/preprocessor_config.json",
+        "size": 206,
+        "sha256": null,
+        "repo": "mlx-community/higgs-audio-v2-tokenizer",
+        "revision": "175578e703e743eb93f5bdcb0e695892521d7734"
+      }
+    ],
+    "sizeBytes": 7002643180,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Выразительная речь, клонирование и диалоги с несколькими говорящими.",
+      "en": "Expressive speech, voice cloning and multi-speaker conversations."
+    },
+    "features": [
+      "cloning",
+      "dialogue"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "de",
+      "ko"
+    ],
+    "license": "Boson AI Community License",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/higgs-audio-v2-3B-mlx-q8",
+    "verifiedOn": "2026-10-29",
+    "notes": {
+      "ru": "Аудиотокенизатор устанавливается автоматически вместе с моделью.",
+      "en": "The audio tokenizer installs automatically with the model."
+    },
+    "adapter": "higgs",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "languageMode": "text"
+  },
+  {
+    "id": "orpheus-3b",
+    "name": "Orpheus 3B",
+    "repo": "mlx-community/orpheus-3b-0.1-ft-4bit",
+    "revision": "b30aed4ecfa03c0177a5419b51919d14a105f183",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1068,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 1857062388,
+        "sha256": "973488e7f7d681ac4f29dfb74d13ce01e94bf3aac201901a8a231d54d33ec7ed"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 45720,
+        "sha256": null
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 350,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 22849547,
+        "sha256": "fc3fecb199b4170636dbfab986d25f628157268d37b861f9cadaca60b1353bce"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 5407395,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 300,
+        "sha256": null,
+        "repo": "mlx-community/snac_24khz",
+        "revision": "556af1cd3b1c5f2d294f6aa9bb886245d7b716ac"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 79404951,
+        "sha256": "e61ae2f638f56ee07a37592cd5a6a9e7d642560ddc78a76ee4a7f96d6922f1be",
+        "repo": "mlx-community/snac_24khz",
+        "revision": "556af1cd3b1c5f2d294f6aa9bb886245d7b716ac"
+      }
+    ],
+    "sizeBytes": 1964771719,
+    "task": "synthesis",
+    "format": "MLX",
+    "description": {
+      "ru": "Английская выразительная речь и готовые голоса; доступ к весам требует согласия автора.",
+      "en": "Expressive English speech and preset voices; weight access requires author approval."
+    },
+    "features": [
+      "presets",
+      "emotion"
+    ],
+    "languages": [
+      "en"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-audio-extended",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/orpheus-3b-0.1-ft-4bit",
+    "verifiedOn": "2026-10-29",
+    "adapter": "orpheus",
+    "synthesisMode": "preset",
+    "presetVoices": [
+      "tara",
+      "leah",
+      "jess",
+      "leo",
+      "dan",
+      "mia",
+      "zac",
+      "zoe"
+    ],
+    "markup": "orpheus",
+    "resourceAliases": {
+      "canopylabs/orpheus-3b-0.1-ft": "mlx-community/orpheus-3b-0.1-ft-4bit",
+      "mlx-community/orpheus-3b-0.1-ft-bf16": "mlx-community/orpheus-3b-0.1-ft-4bit"
+    },
+    "defaultTemperature": 0.6,
+    "supportsSeed": true
+  },
+  {
+    "id": "openvoice-v2",
+    "name": "OpenVoice V2",
+    "repo": "myshell-ai/OpenVoiceV2",
+    "revision": "f36e7edfe1684461a8343844af60babc2efbb727",
+    "files": [
+      {
+        "path": "base_speakers/ses/en-au.pth",
+        "size": 1701,
+        "sha256": "5e9782233deef51fc5289d05ad4dd4ce12b196e282eccf6b6db6256bbd02daaa"
+      },
+      {
+        "path": "base_speakers/ses/en-br.pth",
+        "size": 1701,
+        "sha256": "2bf5a88025cfd10473b25d65d5c0e608338ce4533059c5f9a3383e69c812d389"
+      },
+      {
+        "path": "base_speakers/ses/en-default.pth",
+        "size": 1783,
+        "sha256": "e4139de3bc2ea162f45a5a5f9559b710686c9689749b5ab8945ee5e2a082d154"
+      },
+      {
+        "path": "base_speakers/ses/en-india.pth",
+        "size": 1701,
+        "sha256": "ad03d946757e95fe9e13239aa4b11071d98f22316f604f34b1a0b4bdf41cda48"
+      },
+      {
+        "path": "base_speakers/ses/en-newest.pth",
+        "size": 1692,
+        "sha256": "6a3798229b1114f0e9cc137b33211809def7dda5a8a9398d5a112c0b42699177"
+      },
+      {
+        "path": "base_speakers/ses/en-us.pth",
+        "size": 1701,
+        "sha256": "0d092d4af0815a4bfbc6105b65621ab68dc4c61b2f55044d8a66968a34947c32"
+      },
+      {
+        "path": "base_speakers/ses/es.pth",
+        "size": 1692,
+        "sha256": "b8cece8853fb75b9f5217a1f5cda9807bac92a3e4c4547fc651e404d05deff63"
+      },
+      {
+        "path": "base_speakers/ses/fr.pth",
+        "size": 1692,
+        "sha256": "8a01f6d30a73efa368c288a542a522a2bcdd4e2ec5589d8646b307cf8e2ad9ae"
+      },
+      {
+        "path": "base_speakers/ses/jp.pth",
+        "size": 1692,
+        "sha256": "7b645ff428de4a57a22122318968f1e6127ac81fda2e2aa66062deccd3864416"
+      },
+      {
+        "path": "base_speakers/ses/kr.pth",
+        "size": 1692,
+        "sha256": "f501479d6072741a396725bec79144653e9f4a5381b85901e29683aa169795df"
+      },
+      {
+        "path": "base_speakers/ses/zh.pth",
+        "size": 1692,
+        "sha256": "2b353de562700c13faacf096ecfc0adcafd26e6704a9feef572be1279714e031"
+      },
+      {
+        "path": "converter/checkpoint.pth",
+        "size": 131320490,
+        "sha256": "9652c27e92b6b2a91632590ac9962ef7ae2b712e5c5b7f4c34ec55ee2b37ab9e"
+      },
+      {
+        "path": "converter/config.json",
+        "size": 838,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 131340067,
+    "task": "conversion",
+    "format": "PyTorch",
+    "description": {
+      "ru": "Перенос тембра голоса; это конвертация, а не самостоятельная озвучка текста.",
+      "en": "Voice timbre transfer: a conversion model rather than standalone text-to-speech."
+    },
+    "features": [
+      "conversion"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "license": "mit",
+    "integration": "ready",
+    "runtime": "torch-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/myshell-ai/OpenVoiceV2",
+    "verifiedOn": "2026-10-29",
+    "notes": {
+      "ru": "Для озвучки текста требуется отдельный синтезатор, например MeloTTS.",
+      "en": "Text-to-speech requires a separate synthesizer such as MeloTTS."
+    },
+    "adapter": "openvoice",
+    "synthesisMode": "clone",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "moss-sfx",
+    "name": "MOSS SoundEffect",
+    "repo": "appautomaton/openmoss-sound-effect-mlx",
+    "revision": "5dcecb4d2cc8f48ba45eab61a61bbc5865a5585a",
+    "files": [
+      {
+        "path": "mlx-4bit/added_tokens.json",
+        "size": 704,
+        "sha256": null
+      },
+      {
+        "path": "mlx-4bit/chat_template.jinja",
+        "size": 352,
+        "sha256": null
+      },
+      {
+        "path": "mlx-4bit/config.json",
+        "size": 2671,
+        "sha256": null
+      },
+      {
+        "path": "mlx-4bit/merges.txt",
+        "size": 1671853,
+        "sha256": null
+      },
+      {
+        "path": "mlx-4bit/model.safetensors",
+        "size": 4700528250,
+        "sha256": "beb8e0b3924c338dc8a18a01897a6922486a75b7f20ecc153c530b46d2fc469b"
+      },
+      {
+        "path": "mlx-4bit/processor_config.json",
+        "size": 145,
+        "sha256": null
+      },
+      {
+        "path": "mlx-4bit/special_tokens_map.json",
+        "size": 631,
+        "sha256": null
+      },
+      {
+        "path": "mlx-4bit/tokenizer.json",
+        "size": 11422691,
+        "sha256": "cb3c8fa82993d515469c2800cc455bff4aaa3c4fed9da1f2b0c0668c304f335a"
+      },
+      {
+        "path": "mlx-4bit/tokenizer_config.json",
+        "size": 5501,
+        "sha256": null
+      },
+      {
+        "path": "mlx-4bit/vocab.json",
+        "size": 2776833,
+        "sha256": null
+      },
+      {
+        "path": "mlx-int8/config.json",
+        "size": 6686,
+        "sha256": null,
+        "repo": "appautomaton/openmoss-audio-tokenizer-mlx",
+        "revision": "3b22b5958c15f807e3ca8faae2cc3b7cc4b74552"
+      },
+      {
+        "path": "mlx-int8/model.safetensors",
+        "size": 2003407408,
+        "sha256": "de45810416fbc67a444e9b1afdbb41569a13669f7942af2f011b26e918767995",
+        "repo": "appautomaton/openmoss-audio-tokenizer-mlx",
+        "revision": "3b22b5958c15f807e3ca8faae2cc3b7cc4b74552"
+      }
+    ],
+    "sizeBytes": 6719823725,
+    "task": "processing",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Генерация звуковых эффектов по текстовому описанию.",
+      "en": "Generate sound effects from a text description."
+    },
+    "features": [
+      "sound-effects"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-speech",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/appautomaton/openmoss-sound-effect-mlx",
+    "verifiedOn": "2026-10-29",
+    "artifactSubdir": "mlx-4bit",
+    "adapter": "moss-sfx",
+    "synthesisMode": "effect",
+    "codecRepo": "appautomaton/openmoss-audio-tokenizer-mlx",
+    "codecSubdir": "mlx-int8",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "resemble-enhance",
+    "name": "Resemble Enhance",
+    "repo": "ResembleAI/resemble-enhance",
+    "revision": "4e3510ce4a8391159f665903544c5150bee7b2cb",
+    "files": [
+      {
+        "path": "enhancer_stage2/ds/G/default/mp_rank_00_model_states.pt",
+        "size": 713176232,
+        "sha256": "f9d035f318de3e6d919bc70cf7ad7d32b4fe92ec5cbe0b30029a27f5db07d9d6"
+      },
+      {
+        "path": "enhancer_stage2/ds/G/latest",
+        "size": 7,
+        "sha256": null
+      },
+      {
+        "path": "enhancer_stage2/hparams.yaml",
+        "size": 717,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 713176956,
+    "task": "processing",
+    "format": "PyTorch",
+    "description": {
+      "ru": "Шумоподавление и восстановление качества записи речи.",
+      "en": "Speech denoising and recording enhancement."
+    },
+    "features": [
+      "enhancement"
+    ],
+    "languages": [
+      "en"
+    ],
+    "license": "mit",
+    "integration": "ready",
+    "runtime": "torch-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/ResembleAI/resemble-enhance",
+    "verifiedOn": "2026-10-29",
+    "adapter": "enhance",
+    "synthesisMode": "effect",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "repo": "mlx-community/whisper-base-mlx-q4",
+    "revision": "780e14bdcd73371c3bb45f86aa038325aa42beb0",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 335,
+        "sha256": null
+      },
+      {
+        "path": "weights.npz",
+        "size": 80473740,
+        "sha256": "de610861d15452d1219382c65f1020337249f0a23724542870b33a1ae98e21ee"
+      }
+    ],
+    "id": "whisper-base",
+    "name": "Whisper Base",
+    "task": "transcription",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Компактная расшифровка чистой речи.",
+      "en": "Compact transcription of clear speech."
+    },
+    "license": "MIT",
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "sizeBytes": 80474075,
+    "features": [
+      "transcription"
+    ],
+    "runtime": "mlx-whisper",
+    "integration": "ready",
+    "downloadable": true,
+    "gated": false,
+    "sourceUrl": "https://huggingface.co/mlx-community/whisper-base-mlx-q4",
+    "verifiedOn": "2026-10-29",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "adapter": "whisper"
+  },
+  {
+    "repo": "mlx-community/whisper-small-mlx-q4",
+    "revision": "cd85bf0648ec125b9cae1eb6b617a41e58721704",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 339,
+        "sha256": null
+      },
+      {
+        "path": "weights.npz",
+        "size": 196537352,
+        "sha256": "ca6659298fe7550468ff0fc49dea7442615d9a53d1ce087aaded1b7627451998"
+      }
+    ],
+    "id": "whisper-small",
+    "name": "Whisper Small",
+    "task": "transcription",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Повседневная расшифровка образцов голоса.",
+      "en": "Everyday transcription of voice references."
+    },
+    "license": "MIT",
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "sizeBytes": 196537691,
+    "features": [
+      "transcription"
+    ],
+    "runtime": "mlx-whisper",
+    "integration": "ready",
+    "downloadable": true,
+    "gated": false,
+    "sourceUrl": "https://huggingface.co/mlx-community/whisper-small-mlx-q4",
+    "verifiedOn": "2026-10-29",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "adapter": "whisper"
+  },
+  {
+    "repo": "mlx-community/whisper-large-v3-turbo-q4",
+    "revision": "660c343bbf4e52ac257f0b7d952e5388e6f93bef",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 341,
+        "sha256": null
+      },
+      {
+        "path": "weights.npz",
+        "size": 463664664,
+        "sha256": "862bbc832b05f3f4ec19dd632b701d61a6d3f5c7906360a10d72a79870642a80"
+      }
+    ],
+    "id": "whisper-turbo",
+    "name": "Whisper Large V3 Turbo",
+    "task": "transcription",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Многоязычное распознавание; ускоренная версия Large V3.",
+      "en": "Multilingual recognition with the faster Large V3 architecture."
+    },
+    "license": "MIT",
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "sizeBytes": 463665005,
+    "features": [
+      "transcription"
+    ],
+    "runtime": "mlx-whisper",
+    "integration": "ready",
+    "downloadable": true,
+    "gated": false,
+    "sourceUrl": "https://huggingface.co/mlx-community/whisper-large-v3-turbo-q4",
+    "verifiedOn": "2026-10-29",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "adapter": "whisper"
+  },
+  {
+    "id": "whisper-medium",
+    "name": "Whisper Medium",
+    "repo": "mlx-community/whisper-medium-mlx-q4",
+    "revision": "1b8a6ee7f882cb5ec97d7e93fee4b7f22405bf87",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 341,
+        "sha256": null
+      },
+      {
+        "path": "weights.npz",
+        "size": 512230640,
+        "sha256": "0d0d1c30691660c66ec3f4e559de7244495b359b38b112f9b7e824746e61aa50"
+      }
+    ],
+    "sizeBytes": 512230981,
+    "task": "transcription",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Многоязычное распознавание между Small и Large по размеру.",
+      "en": "A multilingual recognizer between Small and Large in size."
+    },
+    "features": [
+      "transcription"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "license": "MIT",
+    "integration": "ready",
+    "runtime": "mlx-whisper",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/whisper-medium-mlx-q4",
+    "verifiedOn": "2026-10-29",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "adapter": "whisper"
+  },
+  {
+    "id": "whisper-large-v3",
+    "name": "Whisper Large V3",
+    "repo": "mlx-community/whisper-large-v3-mlx-4bit",
+    "revision": "d12b5d0043a6fe0c59af321617fba041d4e8e0c8",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 342,
+        "sha256": null
+      },
+      {
+        "path": "weights.npz",
+        "size": 973563040,
+        "sha256": "3bfa3c4e42344ea87a5b81a73992a867088ae076d377042e384b657adea81db9"
+      }
+    ],
+    "sizeBytes": 973563382,
+    "task": "transcription",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Полная модель Large V3 для многоязычного распознавания.",
+      "en": "The full Large V3 model for multilingual transcription."
+    },
+    "features": [
+      "transcription"
+    ],
+    "languages": [
+      "ru",
+      "en"
+    ],
+    "license": "MIT",
+    "integration": "ready",
+    "runtime": "mlx-whisper",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/whisper-large-v3-mlx-4bit",
+    "verifiedOn": "2026-10-29",
+    "defaultTemperature": null,
+    "supportsSeed": true,
+    "adapter": "whisper"
+  },
+  {
+    "id": "gigaam-v3",
+    "name": "GigaAM v3",
+    "repo": "ai-sage/GigaAM-v3",
+    "revision": "ec1dc1f01d0d627ab2c0d3acc1e235702300d95e",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1867,
+        "sha256": null
+      },
+      {
+        "path": "pytorch_model.bin",
+        "size": 448928167,
+        "sha256": "afc6dcbae8320ea56f2cddebc0f13fbf62c9d59b6ddcad899782623c8610826a"
+      },
+      {
+        "path": "tokenizer.model",
+        "size": 255336,
+        "sha256": "828c12c991019eef952a960661f25a92d6ad279591e2ea466b4aeddf1d20a18a"
+      },
+      {
+        "path": "modeling_gigaam.py",
+        "size": 49135,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 449234505,
+    "task": "transcription",
+    "format": "PyTorch",
+    "description": {
+      "ru": "Модель распознавания, ориентированная на русскую речь.",
+      "en": "A speech recognition model focused on Russian."
+    },
+    "features": [
+      "transcription"
+    ],
+    "languages": [
+      "ru"
+    ],
+    "license": "mit",
+    "integration": "ready",
+    "runtime": "torch-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/ai-sage/GigaAM-v3",
+    "verifiedOn": "2026-10-29",
+    "adapter": "gigaam",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "qwen3-asr",
+    "name": "Qwen3-ASR 1.7B",
+    "repo": "mlx-community/Qwen3-ASR-1.7B-4bit",
+    "revision": "78a389c776a5483b2d0d4ea5494e11012e0d6159",
+    "files": [
+      {
+        "path": "chat_template.json",
+        "size": 1161,
+        "sha256": null
+      },
+      {
+        "path": "config.json",
+        "size": 7188,
+        "sha256": null
+      },
+      {
+        "path": "generation_config.json",
+        "size": 142,
+        "sha256": null
+      },
+      {
+        "path": "merges.txt",
+        "size": 1671853,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 1603081617,
+        "sha256": "9848eaf7a5c1589c671b35035ac27b72e248dd0c604eacae547e7e403d29db45"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 78968,
+        "sha256": null
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 330,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 12487,
+        "sha256": null
+      },
+      {
+        "path": "vocab.json",
+        "size": 2776833,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 1607630579,
+    "task": "transcription",
+    "format": "MLX Q4",
+    "description": {
+      "ru": "Многоязычное распознавание, включая русский язык.",
+      "en": "Multilingual speech recognition including Russian."
+    },
+    "features": [
+      "transcription"
+    ],
+    "languages": [
+      "ru",
+      "en",
+      "zh",
+      "yue",
+      "ar",
+      "de",
+      "fr",
+      "es",
+      "pt",
+      "id",
+      "it",
+      "ko",
+      "th",
+      "vi",
+      "ja",
+      "tr",
+      "hi",
+      "ms",
+      "nl",
+      "sv",
+      "da",
+      "fi",
+      "pl",
+      "cs",
+      "fil",
+      "fa",
+      "el",
+      "hu",
+      "mk",
+      "ro"
+    ],
+    "license": "apache-2.0",
+    "integration": "ready",
+    "runtime": "mlx-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/Qwen3-ASR-1.7B-4bit",
+    "verifiedOn": "2026-10-29",
+    "adapter": "qwen-asr",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "parakeet-v3",
+    "name": "Parakeet TDT 0.6B v3",
+    "repo": "mlx-community/parakeet-tdt-0.6b-v3",
+    "revision": "ed2b7e8c15f9aaa0b5772e2efb986255eaef7e15",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 244093,
+        "sha256": null
+      },
+      {
+        "path": "model.safetensors",
+        "size": 2508288736,
+        "sha256": "05e01c7f396c298cf7d23f61da7b504adeab698f0aaeafd9c82d198625464592"
+      },
+      {
+        "path": "tokenizer.model",
+        "size": 360916,
+        "sha256": "eacec2b0a77f336d4a2ca4a25a7047575d3c2b74de47e997f4c205126ed3135e"
+      },
+      {
+        "path": "tokenizer.vocab",
+        "size": 101024,
+        "sha256": null
+      },
+      {
+        "path": "vocab.txt",
+        "size": 46772,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 2509041541,
+    "task": "transcription",
+    "format": "MLX",
+    "description": {
+      "ru": "Многоязычное распознавание 25 европейских языков, включая русский.",
+      "en": "Recognition for 25 European languages, including Russian."
+    },
+    "features": [
+      "transcription"
+    ],
+    "languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "bg",
+      "hr",
+      "cs",
+      "da",
+      "nl",
+      "et",
+      "fi",
+      "el",
+      "hu",
+      "it",
+      "lv",
+      "lt",
+      "mt",
+      "pl",
+      "pt",
+      "ro",
+      "sk",
+      "sl",
+      "sv",
+      "ru",
+      "uk"
+    ],
+    "license": "cc-by-4.0",
+    "integration": "ready",
+    "runtime": "mlx-audio",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v3",
+    "verifiedOn": "2026-10-29",
+    "adapter": "parakeet",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  },
+  {
+    "id": "faster-whisper-v3",
+    "name": "Faster Whisper Large V3",
+    "repo": "Systran/faster-whisper-large-v3",
+    "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "files": [
+      {
+        "path": "config.json",
+        "size": 2394,
+        "sha256": null
+      },
+      {
+        "path": "model.bin",
+        "size": 3087284237,
+        "sha256": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1"
+      },
+      {
+        "path": "preprocessor_config.json",
+        "size": 340,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 2480617,
+        "sha256": null
+      },
+      {
+        "path": "vocabulary.json",
+        "size": 1068114,
+        "sha256": null
+      }
+    ],
+    "sizeBytes": 3090835702,
+    "task": "transcription",
+    "format": "CTranslate2",
+    "description": {
+      "ru": "Распознавание через CTranslate2 для процессора или NVIDIA.",
+      "en": "CTranslate2-based transcription for CPU or NVIDIA inference."
+    },
+    "features": [
+      "transcription"
+    ],
+    "languages": [
+      "en",
+      "zh",
+      "de",
+      "es",
+      "ru",
+      "ko",
+      "fr",
+      "ja",
+      "pt",
+      "tr",
+      "pl",
+      "ca",
+      "nl",
+      "ar",
+      "sv",
+      "it",
+      "id",
+      "hi",
+      "fi",
+      "vi",
+      "he",
+      "uk",
+      "el",
+      "ms",
+      "cs",
+      "ro",
+      "da",
+      "hu",
+      "ta",
+      "no",
+      "th",
+      "ur",
+      "hr",
+      "bg",
+      "lt",
+      "la",
+      "mi",
+      "ml",
+      "cy",
+      "sk",
+      "te",
+      "fa",
+      "lv",
+      "bn",
+      "sr",
+      "az",
+      "sl",
+      "kn",
+      "et",
+      "mk",
+      "br",
+      "eu",
+      "is",
+      "hy",
+      "ne",
+      "mn",
+      "bs",
+      "kk",
+      "sq",
+      "sw",
+      "gl",
+      "mr",
+      "pa",
+      "si",
+      "km",
+      "sn",
+      "yo",
+      "so",
+      "af",
+      "oc",
+      "ka",
+      "be",
+      "tg",
+      "sd",
+      "gu",
+      "am",
+      "yi",
+      "lo",
+      "uz",
+      "fo",
+      "ht",
+      "ps",
+      "tk",
+      "nn",
+      "mt",
+      "sa",
+      "lb",
+      "my",
+      "bo",
+      "tl",
+      "mg",
+      "as",
+      "tt",
+      "haw",
+      "ln",
+      "ha",
+      "ba",
+      "jw",
+      "su",
+      "yue"
+    ],
+    "license": "mit",
+    "integration": "ready",
+    "runtime": "faster-whisper",
+    "gated": false,
+    "downloadable": true,
+    "sourceUrl": "https://huggingface.co/Systran/faster-whisper-large-v3",
+    "verifiedOn": "2026-10-29",
+    "adapter": "faster-whisper",
+    "defaultTemperature": null,
+    "supportsSeed": true
+  }
+]

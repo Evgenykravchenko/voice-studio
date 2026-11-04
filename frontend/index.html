@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru" data-mode="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Voice Studio — локальная студия клонирования голоса и озвучки." />
+    <meta name="theme-color" content="#111416" />
+    <title>Voice Studio</title>
+    <script>
+      try {
+        const preference = JSON.parse(localStorage.getItem('vs.theme') || '"dark"');
+        document.documentElement.dataset.mode = preference === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : preference === 'light' ? 'light' : 'dark';
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <noscript>Для работы Voice Studio включите JavaScript. / Enable JavaScript to use Voice Studio.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

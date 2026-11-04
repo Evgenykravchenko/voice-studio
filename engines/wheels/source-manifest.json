@@ -1,0 +1,24 @@
+{
+  "pyopenjtalk": {
+    "name": "pyopenjtalk-0.4.1.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/58/74/ccd31c696f047ba381f9b11a504bf1199756c3f30f3de64e3eeb83e10b4a/pyopenjtalk-0.4.1.tar.gz",
+    "sha256": "d5ada46f7fc2b52c1c79c273eb9668ff6ad7ab276a8db9d8be119ef93440f0dc",
+    "version": "0.4.1"
+  },
+  "mojimoji": {
+    "name": "mojimoji-0.0.13.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/08/fb/ee22357cd7622fb879fac575feaffc54469ed9a0c1d9073355b1ebc62b7f/mojimoji-0.0.13.tar.gz",
+    "sha256": "0e6d2fba22cc8bf132a5bdf3a964296d9287a618d09681a12868f0fd518e4230",
+    "version": "0.0.13"
+  },
+  "webrtcvad": {
+    "name": "webrtcvad-2.0.10.tar.gz",
+    "url": "https://files.pythonhosted.org/packages/89/34/e2de2d97f3288512b9ea56f92e7452f8207eb5a0096500badf9dfd48f5e6/webrtcvad-2.0.10.tar.gz",
+    "sha256": "f1bed2fb25b63fb7b1a55d64090c993c9c9167b28485ae0bcdd81cf6ede96aea",
+    "version": "2.0.10",
+    "python": "3.11",
+    "wheelVersion": "2.0.10+voicestudio.1",
+    "patch": "patches/webrtcvad-importlib-metadata.patch",
+    "patchSha256": "4001e12fc01127899c56d8ca37b5ba31f4e7e13f0e28fe8f26e6713e3b23d44a"
+  }
+}
