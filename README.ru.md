@@ -2,7 +2,7 @@
 
 **Озвучка текста, клонирование голоса и улучшение записей на вашем Mac.**
 
-[![Статус: бета](https://img.shields.io/badge/статус-бета-e8ad43)](docs/status.ru.md)
+[![Версия: 0.1.0](https://img.shields.io/badge/версия-0.1.0-e8ad43)](docs/status.ru.md)
 [![Платформа: macOS 14+ Apple Silicon](https://img.shields.io/badge/macOS_14%2B-Apple_Silicon-30363d)](docs/setup.ru.md)
 [![Лицензия: MIT](https://img.shields.io/badge/лицензия-MIT-30363d)](LICENSE)
 [![CI](https://github.com/Evgenykravchenko/voice-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/Evgenykravchenko/voice-studio/actions/workflows/ci.yml)
@@ -23,7 +23,7 @@ Voice Studio создаёт речь из текста (TTS) локально и
 Java и Python обеспечивают работу сервера; скрипт запуска устанавливает нужные инструменты.
 
 > [!NOTE]
-> **Бета для macOS 14+ на Apple Silicon.** Windows и Linux запланированы.
+> **Версия 0.1.0 для macOS 14+ на Apple Silicon.** Windows и Linux запланированы.
 > Качество речи, доступные языки и расход памяти зависят от модели.
 
 ## Возможности
@@ -142,3 +142,5 @@ Resemble Enhance улучшает готовое аудио. Все интегр
 
 Дальнейшие задачи собраны в [планах развития](docs/roadmap.ru.md). Если студия оказалась полезной,
 поддержите репозиторий звездой или расскажите о нём тем, кто работает со звуком.
+
+[История изменений](CHANGELOG.ru.md) · [Разбор безопасности 0.1.0](docs/security-review.ru.md)

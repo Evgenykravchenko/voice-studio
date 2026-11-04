@@ -27,14 +27,20 @@ manually before merging.
 
 ## Version names
 
-Use `vMAJOR.MINOR.PATCH`, for example `v0.1.0`. For beta releases use a suffix
-such as `v0.1.0-beta.1` and mark the GitHub Release as a prerelease.
+Use `vMAJOR.MINOR.PATCH`, for example `v0.1.0`, for an ordinary release.
+The only development suffix is `-snapshot`, for example `v0.1.1-snapshot`;
+mark those development builds as prereleases. Do not use beta, alpha or RC suffixes.
+`v0.1.0` is the first ordinary release and has no prerelease flag.
+Snapshot tags are protected too: never move an existing tag to a new commit.
+The Python project version is the base `X.Y.Z`; frontend, Java and Python lock
+metadata must match it. Run `.venv/bin/python scripts/check-version.py --tag v0.1.0`
+with the project Python before creating a tag; CI checks metadata on every PR.
 Increase patch for compatible fixes, minor for features and major for breaking
 changes after 1.0. During 0.x, describe incompatible changes explicitly.
 
 ## Release checklist
 
-1. Merge the release changes through a PR with a title such as `chore(release): prepare v0.1.0-beta.1`.
+1. Merge the release changes through a PR with a title such as `chore(release): prepare v0.1.0`.
 2. Check the chosen `main` commit's CI and security results. On an Apple Silicon Mac, verify relevant real model workflows separately; Linux unit CI does not certify macOS inference.
 3. Use **Releases → Draft a new release**. Select the reviewed commit as the target and create the new version tag from that commit.
 4. Review the notes: changes, setup/update steps, supported macOS and known limits. Keep model licenses separate from the app's MIT license.
