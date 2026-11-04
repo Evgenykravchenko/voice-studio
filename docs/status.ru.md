@@ -2,7 +2,7 @@
 
 [English](status.md) · **Русский** · [На главную](../README.ru.md)
 
-Voice Studio находится в **локальной бете для macOS 14+ на Apple Silicon**. Windows,
+Voice Studio **0.1.0 работает локально на macOS 14+ с Apple Silicon**. Windows,
 Linux, Intel Mac и развёртывание с CUDA текущим установщиком не поддерживаются.
 
 ## Что проверено

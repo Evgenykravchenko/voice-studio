@@ -11,10 +11,7 @@ exploits out of public issues and discussions. Reports are reviewed manually.
 
 ## Versions
 
-Voice Studio is a macOS Apple Silicon beta. Report issues against current `main`
-or the latest published release, if one exists. Include the exact version or
-commit. Supported maintenance lines will be identified in release notes;
-no maintenance schedule or response-time guarantee is currently promised.
+Voice Studio 0.1.0 supports macOS 14+ on Apple Silicon. Report issues against current `main` or the latest published release. Include the exact version or commit. Supported maintenance lines will be identified in release notes; no maintenance schedule or response-time guarantee is currently promised.
 
 ## System boundary
 

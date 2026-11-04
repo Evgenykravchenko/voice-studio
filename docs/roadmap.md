@@ -2,7 +2,7 @@
 
 **English** · [Русский](roadmap.ru.md) · [Home](../README.md)
 
-Voice Studio is currently a local beta for macOS 14+ on Apple Silicon.
+Voice Studio 0.1.0 runs locally on macOS 14+ with Apple Silicon.
 This page describes direction, without promising dates. Check [release status](status.md)
 for what is supported today.
 

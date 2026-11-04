@@ -18,6 +18,7 @@ New here? Follow [Setup](setup.md), then [Using the studio](guide.md).
 | [Project website and search](discovery.md) | Maintain the public site or connect Google Search Console. |
 | [Releases and repository rules](releasing.md) | Understand protected branches, version tags and free CI. |
 | [Security policy](../SECURITY.md) | Send a private vulnerability report and understand security boundaries. |
+| [CodeQL review for 0.1.0](security-review.md) | Understand the reviewed scanner signals and their limits. |
 
 For detailed technical evidence, see [memory measurements](model-resources.md),
 [quality notes](model-quality.md) and the [historical audit](production-readiness.md).

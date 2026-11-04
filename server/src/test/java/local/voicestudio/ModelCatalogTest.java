@@ -31,6 +31,17 @@ class ModelCatalogTest {
             assertTrue(java.util.List.of("queued","downloading").contains(catalog.download("test-model").status()));
         } finally { catalog.stop(); }
     }
+    @Test void optionAndShellSyntaxCannotSelectAnInstallerCommand() throws Exception {
+        var catalog=catalog();
+        try {
+            for(var id:java.util.List.of("--root","--help","test-model;echo bad","test-model\n--root","/tmp/test-model","test-model/..","test-model\\..","unknown-model")) {
+                assertThrows(ResponseStatusException.class,()->catalog.select(id));
+                assertThrows(ResponseStatusException.class,()->catalog.download(id));
+            }
+            catalog.select("test-model");
+            assertEquals("test-model",catalog.list().path("models").get(0).path("id").asString());
+        } finally {catalog.stop();}
+    }
     @Test void immediateCancelAndResumeCannotBeOverwrittenByTheOldProcess() throws Exception {
         var catalog = catalog();
         try {

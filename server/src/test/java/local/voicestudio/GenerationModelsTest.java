@@ -9,6 +9,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GenerationModelsTest {
     @TempDir Path root;
+    @Test void untrustedTextAndVoiceDesignKeepTheirLimitsBeforeInference() throws Exception {
+        try(var factory=jakarta.validation.Validation.buildDefaultValidatorFactory()) {
+            var validator=factory.getValidator();
+            assertTrue(validator.validate(request("design-test",null,"female, low pitch","Hello.")).isEmpty());
+            assertTrue(validator.validate(request("design-test",null,"male"+" ".repeat(1001),"Hello.")).stream().anyMatch(v->v.getPropertyPath().toString().equals("voiceDescription")));
+            assertTrue(validator.validate(request("design-test",null,"female","[".repeat(3001))).stream().anyMatch(v->v.getPropertyPath().toString().equals("text")));
+        }
+    }
     private ModelCatalog catalog() throws Exception {
         var python = root.resolve(".venv/bin/python"); Files.createDirectories(python.getParent());
         Files.writeString(python, """

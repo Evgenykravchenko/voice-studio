@@ -13,6 +13,29 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class VoiceProfilesTest {
     @TempDir Path root;
+    @Test void unregisteredAndRestoredTraversalIdsCannotReadSaveOrDeleteFiles() throws Exception {
+        var paths=new StudioPaths(root); var json=JsonMapper.builder().build();
+        var worker=(SpeechWorker)(id,req,progress)->{throw new AssertionError("No inference expected");};
+        var queue=new Jobs(paths,json,worker);
+        try {
+            var outside=root.resolve("outside"); Files.createDirectories(outside);
+            Files.writeString(outside.resolve("reference.wav"),"original");
+            var profiles=new VoiceProfiles(paths,json,worker,queue);
+            var forged=paths.root().resolve("data/studio/voice-imports/forged.json");
+            Files.writeString(forged,"{\"id\":\"../../../outside\",\"status\":\"ready\"}");
+            profiles=new VoiceProfiles(paths,json,worker,queue);
+            var reopened=profiles;
+            for(var id:List.of("../../../outside",outside.toString(),"..\\outside","%2e%2e%2foutside","missing", "00000000-0000-0000-0000-000000000000")) {
+                assertThrows(ResponseStatusException.class,()->reopened.save(id,new VoiceProfiles.SaveVoice("Voice","Exact words.")));
+                assertThrows(ResponseStatusException.class,()->reopened.discard(id));
+                assertThrows(ResponseStatusException.class,()->reopened.reference(id,true));
+                assertThrows(ResponseStatusException.class,()->reopened.reference(id,false));
+            }
+            assertEquals("original",Files.readString(outside.resolve("reference.wav")));
+            assertFalse(Files.exists(outside.resolve("profile.json")));
+            assertTrue(profiles.tasks().isEmpty());
+        } finally {queue.stop();}
+    }
     private MockMultipartFile file() { return new MockMultipartFile("file","пример.mp3","audio/mpeg",new byte[]{1,2,3}); }
     private VoiceImport await(VoiceProfiles profiles, String id) throws Exception {
         long deadline=System.nanoTime()+TimeUnit.SECONDS.toNanos(4);
