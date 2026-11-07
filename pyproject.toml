@@ -1,6 +1,6 @@
 [project]
 name = "fish-voice-cloner"
-version = "0.1.0"
+version = "0.1.1"
 description = "Local Fish Audio S2 Pro voice cloning on Apple Silicon"
 readme = "README.md"
 license = "MIT"

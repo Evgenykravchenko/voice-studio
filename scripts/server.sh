@@ -33,5 +33,5 @@ case "${1:-}" in
   '') STUDIO_PORT=7080 ;;
   *) echo 'Использование: ./scripts/server.sh [build|test|--studio]' >&2; exit 2 ;;
 esac
-if [ ! -f server/target/voice-studio-server-0.1.0.jar ]; then echo 'Сервер не собран. Выполните ./scripts/bootstrap.sh.' >&2; exit 1; fi
-exec "$JAVA_HOME/bin/java" -Xms64m -Xmx384m -Dvoice.project="$PROJECT_ROOT" -Dserver.port="$STUDIO_PORT" -jar server/target/voice-studio-server-0.1.0.jar
+if [ ! -f server/target/voice-studio-server-0.1.1.jar ]; then echo 'Сервер не собран. Выполните ./scripts/bootstrap.sh.' >&2; exit 1; fi
+exec "$JAVA_HOME/bin/java" -Xms64m -Xmx384m -Dvoice.project="$PROJECT_ROOT" -Dserver.port="$STUDIO_PORT" -jar server/target/voice-studio-server-0.1.1.jar

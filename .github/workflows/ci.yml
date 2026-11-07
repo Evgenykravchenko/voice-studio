@@ -61,7 +61,7 @@ jobs:
       - name: Typecheck and build
         run: npm exec --yes --package=pnpm@11.25.0 -- pnpm --dir frontend build
       - name: Run frontend tests against the built package
-        run: node --test frontend/tests/*.test.mjs
+        run: npm exec --yes --package=pnpm@11.25.0 -- node --test frontend/tests/*.test.mjs
 
   java:
     name: Java API

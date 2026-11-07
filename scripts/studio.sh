@@ -8,7 +8,7 @@ case "${1:-}" in
   '') STUDIO_DEV=0 ;;
   *) echo 'Использование: ./scripts/studio.sh [--dev]' >&2; exit 2 ;;
 esac
-if [ ! -x .venv/bin/python ] || ! .venv/bin/python scripts/check-runtime-location.py || [ ! -f frontend/dist/client/index.html ] || [ ! -f server/target/voice-studio-server-0.1.0.jar ]; then
+if [ ! -x .venv/bin/python ] || ! .venv/bin/python scripts/check-runtime-location.py || [ ! -f frontend/dist/client/index.html ] || [ ! -f server/target/voice-studio-server-0.1.1.jar ]; then
   ./scripts/bootstrap.sh
   . ./scripts/runtime-env.sh
 fi
