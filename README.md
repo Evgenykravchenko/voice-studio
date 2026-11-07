@@ -2,7 +2,7 @@
 
 **Local text-to-speech, voice cloning and audio enhancement for your Mac.**
 
-[![Version: 0.1.0](https://img.shields.io/badge/version-0.1.0-e8ad43)](docs/status.md)
+[![Version: 0.1.1](https://img.shields.io/badge/version-0.1.1-e8ad43)](docs/status.md)
 [![Platform: macOS 14+ Apple Silicon](https://img.shields.io/badge/macOS_14%2B-Apple_Silicon-30363d)](docs/setup.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-30363d)](LICENSE)
 [![CI](https://github.com/Evgenykravchenko/voice-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/Evgenykravchenko/voice-studio/actions/workflows/ci.yml)
@@ -23,7 +23,7 @@ The interface is available in English and Russian, with light and dark themes.
 Java and Python run the local backend; the launcher sets up the required tools.
 
 > [!NOTE]
-> **Version 0.1.0 for macOS 14+ on Apple Silicon.** Windows and Linux support is planned.
+> **Version 0.1.1 for macOS 14+ on Apple Silicon.** Windows and Linux support is planned.
 > Speech quality, supported languages and memory requirements vary by model.
 
 ## What you can do

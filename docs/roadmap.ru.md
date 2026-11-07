@@ -2,7 +2,7 @@
 
 [English](roadmap.md) · **Русский** · [На главную](../README.ru.md)
 
-Voice Studio 0.1.0 работает локально на macOS 14+ с Apple Silicon.
+Voice Studio 0.1.1 работает локально на macOS 14+ с Apple Silicon.
 Здесь указаны направления работы без обещания сроков. Что поддерживается уже
 сейчас, описано в [состоянии выпуска](status.ru.md).
 

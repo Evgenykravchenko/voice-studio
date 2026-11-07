@@ -2,7 +2,7 @@
 
 **English** · [Русский](status.ru.md) · [Home](../README.md)
 
-Voice Studio **0.1.0 runs locally on macOS 14+ with Apple Silicon**. Windows, Linux,
+Voice Studio **0.1.1 runs locally on macOS 14+ with Apple Silicon**. Windows, Linux,
 Intel Macs and CUDA deployment are not currently supported by the installer.
 
 ## Verified

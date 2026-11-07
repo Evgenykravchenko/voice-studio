@@ -87,8 +87,8 @@ fi
 PYTHONPATH="$PROJECT_ROOT/src:$PROJECT_ROOT/vendor" .venv/bin/python -c 'from voice_cloner.cli import _ensure_local_environment; _ensure_local_environment()'
 .venv/bin/python scripts/repair-runtime-locations.py
 if [ "$STUDIO_PYTHON_ONLY" = 0 ]; then
-  CI=true .runtime/toolchains/node/bin/node .runtime/toolchains/pnpm/bin/pnpm.cjs --dir frontend install --frozen-lockfile
-  .runtime/toolchains/node/bin/node .runtime/toolchains/pnpm/bin/pnpm.cjs --dir frontend build
+  CI=true ./scripts/pnpm.sh --dir frontend install --frozen-lockfile
+  ./scripts/pnpm.sh --dir frontend build
   ./scripts/server.sh build
 fi
 printf 'Готово. Всё установлено внутри проекта.\n'

@@ -2,6 +2,14 @@
 
 **English** · [Русский](CHANGELOG.ru.md) · [Home](README.md)
 
+## 0.1.1 - 2026-11-07
+
+- Fix first-time setup failing with `spawnSync pnpm ENOENT` when no global pnpm is installed ([#6](https://github.com/Evgenykravchenko/voice-studio/issues/6)).
+- Use the pinned project's Node.js and pnpm ESM entry point for frontend installation and builds, including nested dependency checks.
+- Add regression checks for a clean environment, paths with spaces and missing local tools. No global package installation is required.
+
+Existing users: update the project source following the [update guide](docs/storage.md), stop a running studio and run `./scripts/studio.sh` again. Keep your data and models.
+
 ## 0.1.0 - 2026-11-04
 
 First release of the local Voice Studio for macOS 14+ on Apple Silicon.
